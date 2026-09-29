@@ -1,0 +1,657 @@
+{
+  "font": {
+    "originalBytes": 2057688,
+    "subsetBytes": 149596,
+    "glyphs": 1205
+  },
+  "photos": [
+    {
+      "id": "baekinje",
+      "originalBytes": 593729,
+      "previews": [
+        {
+          "file": "images/places/optimized/baekinje-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 37774
+        },
+        {
+          "file": "images/places/optimized/baekinje-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 134966
+        }
+      ]
+    },
+    {
+      "id": "baeryeom",
+      "originalBytes": 26806,
+      "previews": [
+        {
+          "file": "images/places/optimized/baeryeom-480.webp",
+          "width": 432,
+          "height": 288,
+          "bytes": 24140
+        },
+        {
+          "file": "images/places/optimized/baeryeom-960.webp",
+          "width": 432,
+          "height": 288,
+          "bytes": 24140
+        }
+      ]
+    },
+    {
+      "id": "boan",
+      "originalBytes": 258274,
+      "previews": [
+        {
+          "file": "images/places/optimized/boan-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 23628
+        },
+        {
+          "file": "images/places/optimized/boan-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 76708
+        }
+      ]
+    },
+    {
+      "id": "bukchoncenter",
+      "originalBytes": 79762,
+      "previews": [
+        {
+          "file": "images/places/optimized/bukchoncenter-480.webp",
+          "width": 480,
+          "height": 343,
+          "bytes": 32830
+        },
+        {
+          "file": "images/places/optimized/bukchoncenter-960.webp",
+          "width": 800,
+          "height": 571,
+          "bytes": 67258
+        }
+      ]
+    },
+    {
+      "id": "changdeok",
+      "originalBytes": 695138,
+      "previews": [
+        {
+          "file": "images/places/optimized/changdeok-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 49812
+        },
+        {
+          "file": "images/places/optimized/changdeok-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 171726
+        }
+      ]
+    },
+    {
+      "id": "chatteul",
+      "originalBytes": 365895,
+      "previews": [
+        {
+          "file": "images/places/optimized/chatteul-480.webp",
+          "width": 480,
+          "height": 354,
+          "bytes": 31864
+        },
+        {
+          "file": "images/places/optimized/chatteul-960.webp",
+          "width": 570,
+          "height": 420,
+          "bytes": 41074
+        }
+      ]
+    },
+    {
+      "id": "chebu",
+      "originalBytes": 144763,
+      "previews": [
+        {
+          "file": "images/places/optimized/chebu-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45356
+        },
+        {
+          "file": "images/places/optimized/chebu-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 154022
+        }
+      ]
+    },
+    {
+      "id": "craft",
+      "originalBytes": 418754,
+      "previews": [
+        {
+          "file": "images/places/optimized/craft-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 35594
+        },
+        {
+          "file": "images/places/optimized/craft-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 102042
+        }
+      ]
+    },
+    {
+      "id": "daelim",
+      "originalBytes": 300089,
+      "previews": [
+        {
+          "file": "images/places/optimized/daelim-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 24898
+        },
+        {
+          "file": "images/places/optimized/daelim-960.webp",
+          "width": 699,
+          "height": 466,
+          "bytes": 46056
+        }
+      ]
+    },
+    {
+      "id": "daeo",
+      "originalBytes": 298289,
+      "previews": [
+        {
+          "file": "images/places/optimized/daeo-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 41912
+        },
+        {
+          "file": "images/places/optimized/daeo-960.webp",
+          "width": 700,
+          "height": 467,
+          "bytes": 86478
+        }
+      ]
+    },
+    {
+      "id": "donglim",
+      "originalBytes": 113410,
+      "previews": [
+        {
+          "file": "images/places/optimized/donglim-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 37822
+        },
+        {
+          "file": "images/places/optimized/donglim-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 95982
+        }
+      ]
+    },
+    {
+      "id": "folk",
+      "originalBytes": 282415,
+      "previews": [
+        {
+          "file": "images/places/optimized/folk-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 24620
+        },
+        {
+          "file": "images/places/optimized/folk-960.webp",
+          "width": 699,
+          "height": 466,
+          "bytes": 49300
+        }
+      ]
+    },
+    {
+      "id": "fritz",
+      "originalBytes": 94657,
+      "previews": [
+        {
+          "file": "images/places/optimized/fritz-480.webp",
+          "width": 350,
+          "height": 400,
+          "bytes": 39676
+        },
+        {
+          "file": "images/places/optimized/fritz-960.webp",
+          "width": 350,
+          "height": 400,
+          "bytes": 39676
+        }
+      ]
+    },
+    {
+      "id": "gippen",
+      "originalBytes": 469768,
+      "previews": [
+        {
+          "file": "images/places/optimized/gippen-480.webp",
+          "width": 480,
+          "height": 354,
+          "bytes": 52248
+        },
+        {
+          "file": "images/places/optimized/gippen-960.webp",
+          "width": 570,
+          "height": 420,
+          "bytes": 69202
+        }
+      ]
+    },
+    {
+      "id": "gogung",
+      "originalBytes": 333148,
+      "previews": [
+        {
+          "file": "images/places/optimized/gogung-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18860
+        },
+        {
+          "file": "images/places/optimized/gogung-960.webp",
+          "width": 940,
+          "height": 626,
+          "bytes": 65224
+        }
+      ]
+    },
+    {
+      "id": "gyeongbok",
+      "originalBytes": 134006,
+      "previews": [
+        {
+          "file": "images/places/optimized/gyeongbok-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 48794
+        },
+        {
+          "file": "images/places/optimized/gyeongbok-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 140346
+        }
+      ]
+    },
+    {
+      "id": "hakgojae",
+      "originalBytes": 273233,
+      "previews": [
+        {
+          "file": "images/places/optimized/hakgojae-480.webp",
+          "width": 480,
+          "height": 333,
+          "bytes": 33210
+        },
+        {
+          "file": "images/places/optimized/hakgojae-960.webp",
+          "width": 960,
+          "height": 667,
+          "bytes": 116704
+        }
+      ]
+    },
+    {
+      "id": "hwangsaengga",
+      "originalBytes": 508309,
+      "previews": [
+        {
+          "file": "images/places/optimized/hwangsaengga-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 31004
+        },
+        {
+          "file": "images/places/optimized/hwangsaengga-960.webp",
+          "width": 940,
+          "height": 705,
+          "bytes": 91518
+        }
+      ]
+    },
+    {
+      "id": "jalppajin",
+      "originalBytes": 364545,
+      "previews": [
+        {
+          "file": "images/places/optimized/jalppajin-480.webp",
+          "width": 480,
+          "height": 318,
+          "bytes": 24200
+        },
+        {
+          "file": "images/places/optimized/jalppajin-960.webp",
+          "width": 940,
+          "height": 623,
+          "bytes": 62048
+        }
+      ]
+    },
+    {
+      "id": "jeongdok",
+      "originalBytes": 283154,
+      "previews": [
+        {
+          "file": "images/places/optimized/jeongdok-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 30942
+        },
+        {
+          "file": "images/places/optimized/jeongdok-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 111740
+        }
+      ]
+    },
+    {
+      "id": "london",
+      "originalBytes": 132241,
+      "previews": [
+        {
+          "file": "images/places/optimized/london-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 40922
+        },
+        {
+          "file": "images/places/optimized/london-960.webp",
+          "width": 940,
+          "height": 705,
+          "bytes": 120344
+        }
+      ]
+    },
+    {
+      "id": "mmca",
+      "originalBytes": 581798,
+      "previews": [
+        {
+          "file": "images/places/optimized/mmca-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36626
+        },
+        {
+          "file": "images/places/optimized/mmca-960.webp",
+          "width": 940,
+          "height": 627,
+          "bytes": 127504
+        }
+      ]
+    },
+    {
+      "id": "onion",
+      "originalBytes": 552635,
+      "previews": [
+        {
+          "file": "images/places/optimized/onion-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 34502
+        },
+        {
+          "file": "images/places/optimized/onion-960.webp",
+          "width": 940,
+          "height": 705,
+          "bytes": 117992
+        }
+      ]
+    },
+    {
+      "id": "osulloc",
+      "originalBytes": 868409,
+      "previews": [
+        {
+          "file": "images/places/optimized/osulloc-480.webp",
+          "width": 480,
+          "height": 303,
+          "bytes": 34970
+        },
+        {
+          "file": "images/places/optimized/osulloc-960.webp",
+          "width": 869,
+          "height": 549,
+          "bytes": 93784
+        }
+      ]
+    },
+    {
+      "id": "park",
+      "originalBytes": 1859105,
+      "previews": [
+        {
+          "file": "images/places/optimized/park-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 59026
+        },
+        {
+          "file": "images/places/optimized/park-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 222806
+        }
+      ]
+    },
+    {
+      "id": "sajik",
+      "originalBytes": 321916,
+      "previews": [
+        {
+          "file": "images/places/optimized/sajik-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20684
+        },
+        {
+          "file": "images/places/optimized/sajik-960.webp",
+          "width": 699,
+          "height": 466,
+          "bytes": 41284
+        }
+      ]
+    },
+    {
+      "id": "sangchon",
+      "originalBytes": 1272789,
+      "previews": [
+        {
+          "file": "images/places/optimized/sangchon-480.webp",
+          "width": 480,
+          "height": 391,
+          "bytes": 46296
+        },
+        {
+          "file": "images/places/optimized/sangchon-960.webp",
+          "width": 856,
+          "height": 697,
+          "bytes": 128620
+        }
+      ]
+    },
+    {
+      "id": "staffpicks",
+      "originalBytes": 406225,
+      "previews": [
+        {
+          "file": "images/places/optimized/staffpicks-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 26706
+        },
+        {
+          "file": "images/places/optimized/staffpicks-960.webp",
+          "width": 939,
+          "height": 605,
+          "bytes": 65950
+        }
+      ]
+    },
+    {
+      "id": "sujebi",
+      "originalBytes": 56581,
+      "previews": [
+        {
+          "file": "images/places/optimized/sujebi-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29622
+        },
+        {
+          "file": "images/places/optimized/sujebi-960.webp",
+          "width": 600,
+          "height": 400,
+          "bytes": 41142
+        }
+      ]
+    },
+    {
+      "id": "suseongdong",
+      "originalBytes": 523329,
+      "previews": [
+        {
+          "file": "images/places/optimized/suseongdong-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 50388
+        },
+        {
+          "file": "images/places/optimized/suseongdong-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 232628
+        }
+      ]
+    },
+    {
+      "id": "teatherapy",
+      "originalBytes": 147174,
+      "previews": [
+        {
+          "file": "images/places/optimized/teatherapy-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 39758
+        },
+        {
+          "file": "images/places/optimized/teatherapy-960.webp",
+          "width": 940,
+          "height": 705,
+          "bytes": 124746
+        }
+      ]
+    },
+    {
+      "id": "tongin",
+      "originalBytes": 309943,
+      "previews": [
+        {
+          "file": "images/places/optimized/tongin-480.webp",
+          "width": 480,
+          "height": 321,
+          "bytes": 25680
+        },
+        {
+          "file": "images/places/optimized/tongin-960.webp",
+          "width": 699,
+          "height": 467,
+          "bytes": 45946
+        }
+      ]
+    },
+    {
+      "id": "tosokchon",
+      "originalBytes": 483099,
+      "previews": [
+        {
+          "file": "images/places/optimized/tosokchon-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 27840
+        },
+        {
+          "file": "images/places/optimized/tosokchon-960.webp",
+          "width": 940,
+          "height": 940,
+          "bytes": 64314
+        }
+      ]
+    },
+    {
+      "id": "unhyeon",
+      "originalBytes": 171868,
+      "previews": [
+        {
+          "file": "images/places/optimized/unhyeon-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45942
+        },
+        {
+          "file": "images/places/optimized/unhyeon-960.webp",
+          "width": 940,
+          "height": 705,
+          "bytes": 152000
+        }
+      ]
+    },
+    {
+      "id": "workshop",
+      "originalBytes": 4418170,
+      "previews": [
+        {
+          "file": "images/places/optimized/workshop-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 25238
+        },
+        {
+          "file": "images/places/optimized/workshop-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 80976
+        }
+      ]
+    },
+    {
+      "id": "yisang",
+      "originalBytes": 1029841,
+      "previews": [
+        {
+          "file": "images/places/optimized/yisang-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36388
+        },
+        {
+          "file": "images/places/optimized/yisang-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 122620
+        }
+      ]
+    }
+  ]
+}

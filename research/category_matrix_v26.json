@@ -1,0 +1,357 @@
+{
+  "venues": 36,
+  "pairs": 36,
+  "categories": [
+    {
+      "category": "먹거리",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "seochon-meal",
+          "places": [
+            "통인시장",
+            "토속촌삼계탕"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "anguk-meal",
+          "places": [
+            "어니언 안국",
+            "황생가칼국수"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "soup-choice",
+          "places": [
+            "삼청동수제비",
+            "깊은"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "seochon-noodle-grill",
+          "places": [
+            "체부동잔치집돼지갈비",
+            "잘빠진메밀 서촌"
+          ],
+          "region": "seochon"
+        }
+      ]
+    },
+    {
+      "category": "카페·차",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "bagel-tea",
+          "places": [
+            "런던베이글뮤지엄 안국점",
+            "차마시는뜰"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "coffee-tea-hanok",
+          "places": [
+            "어니언 안국",
+            "오설록 티하우스 북촌점"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "roasted-blended",
+          "places": [
+            "프릳츠 원서",
+            "티테라피"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "seochon-cafe",
+          "places": [
+            "스태픽스",
+            "대오서점"
+          ],
+          "region": "seochon"
+        }
+      ]
+    },
+    {
+      "category": "쉬기·산책",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "jeongdok",
+          "places": [
+            "어니언 안국",
+            "정독도서관"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "suseongdong",
+          "places": [
+            "스태픽스",
+            "수성동 계곡"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "hanok-courtyards",
+          "places": [
+            "계동 배렴 가옥",
+            "백인제가옥"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "park-hanok",
+          "places": [
+            "사직공원",
+            "상촌재"
+          ],
+          "region": "seochon"
+        }
+      ]
+    },
+    {
+      "category": "문화·역사",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "royal-anguk",
+          "places": [
+            "창덕궁",
+            "운현궁"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "royal-seochon",
+          "places": [
+            "경복궁",
+            "국립고궁박물관"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "yisang",
+          "places": [
+            "대오서점",
+            "이상의 집"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "hanok-life",
+          "places": [
+            "백인제가옥",
+            "북촌문화센터"
+          ],
+          "region": "anguk"
+        }
+      ]
+    },
+    {
+      "category": "미술·전시",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "baeryeom",
+          "places": [
+            "서울공예박물관",
+            "계동 배렴 가옥"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "museum-gallery",
+          "places": [
+            "국립현대미술관 서울",
+            "학고재"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "artist-writer",
+          "places": [
+            "종로구립 박노수미술관",
+            "이상의 집"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "seochon-art",
+          "places": [
+            "대림미술관",
+            "보안1942"
+          ],
+          "region": "seochon"
+        }
+      ]
+    },
+    {
+      "category": "체험·선물",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "hands-on",
+          "places": [
+            "북촌전통공예체험관",
+            "북촌문화센터"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "souvenirs",
+          "places": [
+            "국립민속박물관",
+            "국립현대미술관 서울"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "knot-tea",
+          "places": [
+            "동림매듭공방",
+            "티테라피"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "tea-coffee-gifts",
+          "places": [
+            "오설록 티하우스 북촌점",
+            "프릳츠 원서"
+          ],
+          "region": "anguk"
+        }
+      ]
+    },
+    {
+      "category": "비·더위",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "rainy-day",
+          "places": [
+            "서울공예박물관",
+            "국립현대미술관 서울"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "rain-royal-art",
+          "places": [
+            "국립고궁박물관",
+            "대림미술관"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "rain-reading-culture",
+          "places": [
+            "국립민속박물관",
+            "정독도서관"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "rain-artist-spaces",
+          "places": [
+            "종로구립 박노수미술관",
+            "보안1942"
+          ],
+          "region": "seochon"
+        }
+      ]
+    },
+    {
+      "category": "아이와",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "family-museum",
+          "places": [
+            "서울공예박물관",
+            "국립민속박물관"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "family-royal",
+          "places": [
+            "경복궁",
+            "국립고궁박물관"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "family-break",
+          "places": [
+            "통인시장",
+            "사직공원"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "family-hanok",
+          "places": [
+            "북촌전통공예체험관",
+            "백인제가옥"
+          ],
+          "region": "anguk"
+        }
+      ]
+    },
+    {
+      "category": "무료 관람",
+      "count": 4,
+      "uniquePlaces": 8,
+      "pairs": [
+        {
+          "id": "free-craft-house",
+          "places": [
+            "서울공예박물관",
+            "백인제가옥"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "free-life-hanok",
+          "places": [
+            "국립민속박물관",
+            "북촌문화센터"
+          ],
+          "region": "anguk"
+        },
+        {
+          "id": "free-royal-ondol",
+          "places": [
+            "국립고궁박물관",
+            "상촌재"
+          ],
+          "region": "seochon"
+        },
+        {
+          "id": "free-outdoor",
+          "places": [
+            "사직공원",
+            "수성동 계곡"
+          ],
+          "region": "seochon"
+        }
+      ]
+    }
+  ]
+}

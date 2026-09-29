@@ -1,570 +1,467 @@
-/**
- * Leaflet Map Controller & Mobile-First Navigation Engine (v6.0)
- */
-
-let mapInstance = null;
-let markerLayers = {
-  hotspot: null,
-  blind_gem: null,
-  local_life: null
-};
-let redZoneLayer = null;
-let b2gPolicyLayer = null;
-let connectionLinesLayer = null;
-let navigationRouteLayer = null;
-let walkingRouteLayer = null;
-let activeMarkersMap = {};
-let fuzzyCirclesMap = {};
-let userGpsMarker = null;
-let userGpsAccuracyCircle = null;
-let radarCircleLayer = null;
-let dynamicLineLayer = null;
-let currentCategoryFilter = 'all';
-
-function initMap(containerId = 'map') {
-  const initialCenter = BLIND_SPOT_DATA.regions.all.center;
-  const initialZoom = BLIND_SPOT_DATA.regions.all.zoom;
-
-  mapInstance = L.map(containerId, {
-    zoomControl: false,
-    attributionControl: false
-  }).setView(initialCenter, initialZoom);
-
-  // Base Tile Layers (Detailed Korean Streets)
-  const osmStandard = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; OpenStreetMap'
-  });
-
-  osmStandard.addTo(mapInstance);
-
-  // Reposition zoom control
-  L.control.zoom({ position: 'topright' }).addTo(mapInstance);
-
-  // Initialize Layer Groups
-  markerLayers.hotspot = L.layerGroup().addTo(mapInstance);
-  markerLayers.blind_gem = L.layerGroup().addTo(mapInstance);
-  markerLayers.local_life = L.layerGroup().addTo(mapInstance);
-  connectionLinesLayer = L.layerGroup().addTo(mapInstance);
-  redZoneLayer = L.layerGroup().addTo(mapInstance);
-  b2gPolicyLayer = L.layerGroup().addTo(mapInstance);
-  navigationRouteLayer = L.layerGroup().addTo(mapInstance);
-  walkingRouteLayer = L.layerGroup().addTo(mapInstance);
-
-  // Render Initial Overlays & Markers
-  renderRedZone();
-  renderPlaceMarkers();
-  renderConnectionLines();
-
-  return mapInstance;
-}
-
-/**
- * 북촌 특별관리지역 (레드존) 폴리곤 렌더링
- */
-function renderRedZone() {
-  redZoneLayer.clearLayers();
-  const redZoneData = BLIND_SPOT_DATA.bukchonRedZone;
-  if (!redZoneData || !redZoneData.polygon) return;
-
-  const polygon = L.polygon(redZoneData.polygon, {
-    color: '#dc2626',
-    weight: 2,
-    dashArray: '5, 5',
-    fillColor: '#ef4444',
-    fillOpacity: 0.12,
-    className: 'red-zone-polygon'
-  });
-
-  const popupContent = `
-    <div class="map-popup-card">
-      <span class="map-popup-badge hot">🚨 북촌 특별관리지역 (레드존)</span>
-      <div class="map-popup-title">${redZoneData.name}</div>
-      <p class="map-popup-desc">${redZoneData.summary}</p>
-      <div style="font-size: 0.72rem; color: #059669; font-weight: 700; margin-top: 2px;">
-        ⏰ 허용 시간: ${redZoneData.allowedHours} (${redZoneData.fineAmount})
-      </div>
-    </div>
-  `;
-  polygon.bindPopup(popupContent);
-  redZoneLayer.addLayer(polygon);
-}
-
-/**
- * 커스텀 아이콘 생성
- */
-function createCustomIcon(place) {
-  let className = 'custom-pin';
-  let html = '';
-  let iconSize = [34, 34];
-  let iconAnchor = [17, 17];
-
-  if (place.type === 'hotspot') {
-    className += ' pin-hotspot';
-    html = `
-      <div class="pin-hotspot-pulse"></div>
-      <div class="pin-hotspot-core">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-        </svg>
-      </div>
-    `;
-  } else if (place.type === 'blind_gem') {
-    className += ' pin-blind-gem';
-    html = `
-      <div class="pin-blind-gem-pulse"></div>
-      <div class="pin-blind-gem-core">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        </svg>
-      </div>
-    `;
-  } else {
-    className += ' pin-local-life';
-    iconSize = [30, 30];
-    iconAnchor = [15, 15];
-    html = `
-      <div class="pin-local-life-core">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-        </svg>
-      </div>
-    `;
+window.createAlleyMap = () => {
+  const { t } = window.AlleyI18n;
+  const places = window.ALLEY_PLACES;
+  const host = document.getElementById('map');
+  const status = document.getElementById('map-status');
+  const selection = document.getElementById('map-selection');
+  const announcement = document.getElementById('map-announcement');
+  const title = document.getElementById('map-title');
+  const retry = document.getElementById('map-retry');
+  const markers = new Map();
+  let map;
+  let visible = [];
+  let focusedPair = '';
+  let selectedId = '';
+  let browsing = false;
+  let comparing = false;
+  let cameraPlaceId = '';
+  let failed = false;
+  let slow = false;
+  let statusMessage = '';
+  let libraryPromise;
+  let initialization;
+  let loadTimer;
+  let resizeFrame;
+  const lngLat = place => [place.coords[1], place.coords[0]];
+  const emit = (name, id) => window.dispatchEvent(new CustomEvent(name, { detail: id }));
+  const activePairs = () => focusedPair ? visible.filter(pair => pair.id === focusedPair) : visible;
+  const activePlaces = () => [...new Set(activePairs().flatMap(pair => pair.placeIds))].map(id => places.find(place => place.id === id));
+  const mapName = place => place.mapName || place.name;
+  const overview = () => !focusedPair && new Set(visible.map(pair => pair.region)).size > 1;
+  function node(tag, className, text) {
+    const result = document.createElement(tag);
+    if (className) result.className = className;
+    if (text) result.textContent = t(text);
+    return result;
   }
-
-  return L.divIcon({
-    className: className,
-    html: html,
-    iconSize: iconSize,
-    iconAnchor: iconAnchor
-  });
-}
-
-/**
- * 장소 마커 렌더링
- */
-function renderPlaceMarkers(filterRegion = 'all', filterCategory = 'all', filterTier = 'all') {
-  currentCategoryFilter = filterCategory;
-
-  markerLayers.hotspot.clearLayers();
-  markerLayers.blind_gem.clearLayers();
-  markerLayers.local_life.clearLayers();
-  activeMarkersMap = {};
-  fuzzyCirclesMap = {};
-
-  BLIND_SPOT_DATA.places.forEach(place => {
-    if (filterRegion !== 'all' && place.region !== filterRegion) return;
-    if (filterCategory !== 'all' && !place.category.includes(filterCategory)) return;
-    if (filterTier !== 'all' && place.disclosureTier !== filterTier) return;
-
-    if (place.disclosureTier === 'tier_fuzzy') {
-      const fuzzyCircle = L.circle(place.coords, {
-        radius: 40,
-        color: '#8b5cf6',
-        weight: 1.5,
-        dashArray: '4, 4',
-        fillColor: '#a78bfa',
-        fillOpacity: 0.15
-      });
-      fuzzyCirclesMap[place.id] = fuzzyCircle;
-      markerLayers.local_life.addLayer(fuzzyCircle);
+  function button(text, action, className = '') {
+    const result = node('button', className, text);
+    result.type = 'button';
+    result.addEventListener('click', action);
+    return result;
+  }
+  function fit(items = activePlaces(), maxZoom = 17) {
+    if (!map || !items.length || !host.clientWidth || !host.clientHeight) return;
+    const bounds = new maplibregl.LngLatBounds();
+    items.forEach(place => bounds.extend(lngLat(place)));
+    // The card has its own layout space. Padding protects name labels and controls.
+    const side = Math.min(72, Math.floor(host.clientWidth * .21));
+    const vertical = Math.min(58, Math.floor(host.clientHeight * .23));
+    map.fitBounds(bounds, { padding: { top: vertical, bottom: vertical + 8, left: side, right: side }, maxZoom: Math.min(maxZoom, 16.5), duration: 0 });
+  }
+  function photo(place) {
+    const image = window.AlleyMedia.create(place, { eager: true, onError: () => { image.hidden = true; } });
+    image.className = 'map-card-photo';
+    return image;
+  }
+  function updateChooserHint() {
+    const hint = selection.querySelector('.map-scroll-hint');
+    if (hint) {
+      const hintHeight = hint.hidden ? 0 : hint.getBoundingClientRect().height + 8;
+      hint.hidden = selection.scrollHeight - hintHeight <= selection.clientHeight + 1;
     }
-
-    const icon = createCustomIcon(place);
-    const marker = L.marker(place.coords, { icon: icon });
-
-    const isHot = place.type === 'hotspot';
-    const tagClass = isHot ? 'hot' : (place.type === 'blind_gem' ? 'gem' : 'life');
-    const tagLabel = isHot ? `AI 핫플 (${place.aiMentionRate}%)` : (place.type === 'blind_gem' ? 'AI 사각지대 골목' : '생활유산');
-
-    const kakaoUrl = `https://map.kakao.com/link/to/${encodeURIComponent(place.name)},${place.coords[0]},${place.coords[1]}`;
-    const naverUrl = `https://map.naver.com/v5/directions/-/-/${place.coords[1]},${place.coords[0]},${encodeURIComponent(place.name)}/walk`;
-
-    const popupHtml = `
-      <div class="map-popup-card">
-        <span class="map-popup-badge ${tagClass}">${tagLabel}</span>
-        <div class="map-popup-title">${place.name}</div>
-        <p class="map-popup-desc">${isHot ? (place.aiSummary || '') : (place.story ? place.story.substring(0, 50) + '...' : '')}</p>
-        <div class="map-popup-actions">
-          <button class="map-popup-btn primary" onclick="window.AppManager.startNavigation('${place.id}')">
-            🚶 보행 길안내
-          </button>
-          <button class="map-popup-btn" onclick="window.AppManager.openPlaceDetail('${place.id}')">
-            상세정보
-          </button>
-        </div>
-      </div>
-    `;
-
-    marker.bindPopup(popupHtml);
-
-    marker.on('click', () => {
-      window.AppManager.selectPlace(place.id);
+  }
+  function choosePlace(place) {
+    browsing = false;
+    comparing = false;
+    if (overview()) { emit('alley:region', place.region); }
+    cameraPlaceId = place.id;
+    emit('alley:select', place.id);
+    requestAnimationFrame(() => {
+      if (map && !focusedPair) focusCameraPlace();
+      selection.querySelector('.map-primary-action')?.focus({ preventScroll: true });
     });
-
-    activeMarkersMap[place.id] = marker;
-
-    if (place.type === 'hotspot') {
-      markerLayers.hotspot.addLayer(marker);
-    } else if (place.type === 'blind_gem') {
-      markerLayers.blind_gem.addLayer(marker);
-    } else {
-      markerLayers.local_life.addLayer(marker);
+  }
+  function focusCameraPlace() {
+    const place = activePlaces().find(item => item.id === cameraPlaceId);
+    if (!map || !place || focusedPair) return false;
+    map.easeTo({ center: lngLat(place), zoom: Math.max(map.getZoom(), 16), duration: 0 });
+    return true;
+  }
+  function renderSelection() {
+    // Preserve focus when a keyboard user changes the place using this dock.
+    const focusKey = selection.contains(document.activeElement) ? document.activeElement.dataset.focusKey : '';
+    selection.replaceChildren();
+    const items = activePlaces();
+    const place = items.find(item => item.id === selectedId);
+    const pair = activePairs().find(item => item.placeIds.includes(selectedId));
+    const matchingPairs = activePairs().filter(item => item.placeIds.includes(selectedId));
+    const region = visible.length && visible.every(item => item.region === visible[0].region) ? visible[0].region : '';
+    const regionName = t(region === 'anguk' ? '안국' : region === 'seochon' ? '서촌' : '안국 · 서촌');
+    title.textContent = focusedPair ? t('두 곳의 위치 비교') : t('{region} 지도', { region: regionName });
+    document.getElementById('map-reset').textContent = region ? t('{region} 전체', { region: regionName }) : t('전체 위치');
+    selection.dataset.state = !place || browsing ? 'choices' : 'selected';
+    if (!items.length) {
+      selection.append(node('p', 'map-card-hours', '이 동네에는 선택한 목적의 비교가 아직 없어요. 위에서 목적을 바꾸거나 ‘전체’ 동네를 선택해 주세요.'));
+      return;
     }
-  });
-}
-
-/**
- * 장소 포커스 (모바일 바텀시트 가림 방지 오프셋 적용)
- */
-function focusPlace(placeId, shouldOpenDetail = true) {
-  const place = BLIND_SPOT_DATA.places.find(p => p.id === placeId);
-  if (!place || !mapInstance) return;
-
-  const isMobile = window.innerWidth <= 900;
-  let targetLat = place.coords[0];
-  let targetLng = place.coords[1];
-
-  // On mobile, offset latitude downwards so pin appears in top 50% of viewport
-  if (isMobile) {
-    targetLat = targetLat - 0.0022;
-  }
-
-  mapInstance.flyTo([targetLat, targetLng], 17, {
-    duration: 0.75,
-    easeLinearity: 0.25
-  });
-
-  const marker = activeMarkersMap[placeId];
-  if (marker && marker.openPopup) {
-    setTimeout(() => {
-      try { marker.openPopup(); } catch(e) {}
-    }, 450);
-  }
-
-
-  if (shouldOpenDetail && window.AppManager && window.AppManager.openPlaceDetail) {
-    window.AppManager.openPlaceDetail(placeId);
-  }
-}
-
-/**
- * 인앱 보행자 도보 내비게이션 라인 그리기
- */
-function drawNavigationRoute(originCoords, destCoords, originName = '내 위치', destName = '') {
-  if (!mapInstance) return;
-
-  if (navigationRouteLayer) {
-    navigationRouteLayer.clearLayers();
-  } else {
-    navigationRouteLayer = L.layerGroup().addTo(mapInstance);
-  }
-
-  // Generate realistic walking alley waypoint between origin and destination
-  const midLat = (originCoords[0] + destCoords[0]) / 2 + (Math.random() - 0.5) * 0.0004;
-  const midLng = (originCoords[1] + destCoords[1]) / 2 + (Math.random() - 0.5) * 0.0004;
-  const routePoints = [originCoords, [midLat, midLng], destCoords];
-
-  const polyline = L.polyline(routePoints, {
-    color: '#059669',
-    weight: 5,
-    opacity: 0.9,
-    dashArray: '8, 8',
-    lineCap: 'round',
-    className: 'navigation-route-line'
-  });
-
-  navigationRouteLayer.addLayer(polyline);
-
-  // Origin Marker
-  const startIcon = L.divIcon({
-    className: 'nav-start-pin',
-    html: `<div style="background: #2563eb; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 800; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">출발</div>`,
-    iconSize: [22, 22],
-    iconAnchor: [11, 11]
-  });
-  navigationRouteLayer.addLayer(L.marker(originCoords, { icon: startIcon }));
-
-  // Fit bounds taking mobile UI into account
-  const isMobile = window.innerWidth <= 900;
-  const paddingOptions = isMobile ? { paddingTopLeft: [40, 90], paddingBottomRight: [40, 160] } : { padding: [80, 80] };
-  mapInstance.fitBounds(polyline.getBounds(), paddingOptions);
-}
-
-function clearNavigationRoute() {
-  if (navigationRouteLayer) {
-    navigationRouteLayer.clearLayers();
-  }
-}
-
-/**
- * 고요의 산책로 1.8km 추천 코스 렌더링
- */
-function showWalkingRoute() {
-  if (!walkingRouteLayer) {
-    walkingRouteLayer = L.layerGroup().addTo(mapInstance);
-  }
-  walkingRouteLayer.clearLayers();
-
-  const routePoints = [
-    [37.5833, 126.9872], // 배렴가옥
-    [37.5818, 126.9892], // 혜원
-    [37.5831, 126.9845], // 동림매듭
-    [37.5808, 126.9835], // 정독도서관
-    [37.5786, 126.9729], // 보안책방
-    [37.5789, 126.9708], // 이상의 집
-    [37.5785, 126.9685], // 흙과나무
-    [37.5816, 126.9632]  // 수성동 계곡
-  ];
-
-  const polyline = L.polyline(routePoints, {
-    color: '#059669',
-    weight: 4,
-    opacity: 0.85,
-    dashArray: '8, 8',
-    lineCap: 'round'
-  });
-
-  walkingRouteLayer.addLayer(polyline);
-  mapInstance.fitBounds(polyline.getBounds(), { padding: [60, 60] });
-}
-
-function hideWalkingRoute() {
-  if (walkingRouteLayer) {
-    walkingRouteLayer.clearLayers();
-  }
-}
-
-/**
- * 핫플 - 사각지대 연결 점선
- */
-function renderConnectionLines() {
-  connectionLinesLayer.clearLayers();
-
-  BLIND_SPOT_DATA.places.forEach(place => {
-    if (place.type === 'hotspot' && place.counterpartId) {
-      const counterpart = BLIND_SPOT_DATA.places.find(p => p.id === place.counterpartId);
-      if (counterpart) {
-        const line = L.polyline([place.coords, counterpart.coords], {
-          color: '#10b981',
-          weight: 2,
-          opacity: 0.55,
-          dashArray: '5, 8',
-          lineCap: 'round'
+    if (place && comparing && !focusedPair) {
+      const heading = node('div', 'map-chooser-heading');
+      heading.append(node('h3', '', `${place.name} · ${t('비교 고르기')}`), button('돌아가기', () => { comparing = false; renderSelection(); }, 'map-text-button'));
+      const list = node('div', 'map-comparison-options');
+      matchingPairs.forEach(item => list.append(button(item.title, () => { comparing = false; emit('alley:focus-pair', item.id); }, 'map-place-option')));
+      selection.append(heading, list);
+      selection.querySelector('.map-place-option')?.focus({ preventScroll: true });
+      return;
+    }
+    if (!place || browsing) {
+      const heading = node('div', 'map-chooser-heading');
+      heading.append(node('h3', '', focusedPair ? '어느 곳을 살펴볼까요?' : '장소 선택'), node('span', 'map-place-count', t('{count}곳', { count: items.length })));
+      if (place) heading.append(button('선택한 장소', () => {
+        browsing = false;
+        renderSelection();
+        selection.querySelector('.map-primary-action')?.focus({ preventScroll: true });
+      }, 'map-text-button'));
+      const list = node('div', 'map-place-options');
+      const placeOption = item => {
+        const option = button(item.name, () => choosePlace(item), 'map-place-option');
+        option.dataset.focusKey = `choose-${item.id}`;
+        option.setAttribute('aria-pressed', String(item.id === selectedId));
+        return option;
+      };
+      if (overview()) {
+        ['seochon', 'anguk'].forEach(regionId => {
+          const group = node('div', 'map-neighborhood-options');
+          const heading = node('h4', '', regionId === 'anguk' ? '안국' : '서촌');
+          heading.id = `map-options-${regionId}`;
+          group.setAttribute('role', 'group');
+          group.setAttribute('aria-labelledby', heading.id);
+          group.append(heading, ...items.filter(item => item.region === regionId).map(placeOption));
+          list.append(group);
         });
-        connectionLinesLayer.addLayer(line);
-      }
+      } else list.append(...items.map(placeOption));
+      const scrollHint = node('p', 'map-scroll-hint', '목록을 위아래로 밀어 더 볼 수 있어요');
+      scrollHint.hidden = true;
+      selection.append(heading, list, scrollHint);
+      requestAnimationFrame(updateChooserHint);
+      if (focusKey) [...selection.querySelectorAll('[data-focus-key]')].find(item => item.dataset.focusKey === focusKey)?.focus({ preventScroll: true });
+      return;
     }
-  });
-}
-
-/**
- * 실시간 GPS 위치 표시 (나침반 방향각 지원)
- */
-let currentUserHeading = 0;
-
-function updateUserGpsLocation(lat, lng, accuracy = 20) {
-  if (!mapInstance) return;
-
-  if (userGpsMarker) {
-    userGpsMarker.setLatLng([lat, lng]);
-  } else {
-    const icon = L.divIcon({
-      className: 'user-location-pin',
-      html: `
-        <div class="user-location-heading-cone" id="user-heading-cone" style="transform: rotate(${currentUserHeading}deg);"></div>
-        <div class="user-location-pulse"></div>
-        <div class="user-location-core"></div>
-      `,
-      iconSize: [32, 32],
-      iconAnchor: [16, 16]
+    if (focusedPair) {
+      const tabs = node('div', 'map-pair-switcher');
+      tabs.setAttribute('role', 'group');
+      tabs.setAttribute('aria-label', t('비교 중인 두 장소'));
+      items.forEach(item => {
+        const option = button(item.name, () => emit('alley:select', item.id));
+        option.dataset.focusKey = item.id;
+        option.setAttribute('aria-pressed', String(item.id === selectedId));
+        tabs.append(option);
+      });
+      selection.append(tabs);
+    }
+    if (pair) {
+      const choice = focusedPair ? window.ALLEY_CHOICE(place, pair) : place;
+      const summary = node('div', 'map-card-summary');
+      const copy = node('div', 'map-card-copy');
+      copy.append(node('h3', '', place.name), node('p', 'map-card-facts', choice.cost));
+      summary.append(photo(place), copy);
+      if (!focusedPair) summary.append(button('변경', () => {
+        browsing = true;
+        renderSelection();
+        selection.querySelector('.map-place-option')?.focus({ preventScroll: true });
+      }, 'map-change-place'));
+      const hours = node('p', 'map-card-hours', `${choice.schedule.replace(/\n/g, ' · ')}${choice.closure ? ` · ${choice.closure}` : ''}`);
+      const actions = node('div', 'map-selection-actions');
+      const primary = button('자세히 보기', () => emit('alley:detail', { id: place.id, pairId: focusedPair || (matchingPairs.length === 1 ? pair.id : '') }), 'map-primary-action');
+      primary.dataset.focusKey = 'detail';
+      const compare = button(focusedPair ? '비교 내용 보기' : matchingPairs.length > 1 ? '비교 고르기' : '두 곳 비교', () => {
+        if (!focusedPair && matchingPairs.length > 1) { comparing = true; renderSelection(); }
+        else emit(focusedPair ? 'alley:compare' : 'alley:focus-pair', pair.id);
+      });
+      compare.dataset.focusKey = 'compare';
+      actions.append(primary, compare);
+      selection.append(summary, hours);
+      if (place.locationSource === 'legacy') selection.append(node('p', 'map-location-note', '대략적 위치 · 정확한 입구는 별도 확인'));
+      selection.append(actions);
+    }
+    if (focusKey) [...selection.querySelectorAll('[data-focus-key]')].find(item => item.dataset.focusKey === focusKey)?.focus({ preventScroll: true });
+  }
+  function groupPosition(items) {
+    const points = items.map(place => map.project(lngLat(place)));
+    return { x: points.reduce((sum, point) => sum + point.x, 0) / points.length,
+      y: points.reduce((sum, point) => sum + point.y, 0) / points.length };
+  }
+  function groupLabel(items) {
+    if (items.length === 1) return mapName(items[0]);
+    const region = t(items.every(item => item.region === items[0].region) ? (items[0].region === 'anguk' ? '안국' : '서촌') : '주변');
+    return `${region} · ${window.AlleyI18n.lang === 'en' ? items.length : t('{count}곳', { count: items.length })}`;
+  }
+  function markerGroups(items) {
+    // Overview groups are intentional navigation to a neighborhood. Within a
+    // neighborhood, each real place owns exactly one geographic point.
+    if (overview()) return ['seochon', 'anguk'].map(region => items.filter(place => place.region === region)).filter(group => group.length);
+    return items.map(place => [place]);
+  }
+  function placeLabels(groups) {
+    const placed = [];
+    const positions = new Map();
+    const points = groups.filter(items => items.length === 1).map(items => ({ place: items[0], point: groupPosition(items) }));
+    points.sort((a, b) => Number(b.place.id === selectedId) - Number(a.place.id === selectedId));
+    points.forEach(({ place, point }) => {
+      const width = Math.min(250, Math.ceil([...mapName(place)].reduce((sum, char) => sum + (/[^\u0000-\u00ff]/.test(char) ? 14 : 8), 14)));
+      const height = 28;
+      const candidates = [
+        { x: point.x - width / 2, y: point.y - height - 11 },
+        { x: point.x - width / 2, y: point.y + 11 },
+        { x: point.x + 13, y: point.y - height / 2 },
+        { x: point.x - width - 13, y: point.y - height / 2 }
+      ].map(box => ({ ...box, width, height }));
+      const area = (a, b) => Math.max(0, Math.min(a.x + a.width, b.x + b.width) - Math.max(a.x, b.x)) *
+        Math.max(0, Math.min(a.y + a.height, b.y + b.height) - Math.max(a.y, b.y));
+      const score = box => {
+        const inside = area(box, { x: 6, y: 6, width: host.clientWidth - 12, height: host.clientHeight - 36 });
+        const collisions = placed.reduce((sum, other) => sum + area(box, other), 0);
+        const pins = points.filter(other => other.place.id !== place.id).reduce((sum, other) => sum + area(box,
+          { x: other.point.x - 12, y: other.point.y - 12, width: 24, height: 24 }), 0);
+        return (width * height - inside) * 5 + collisions * 4 + pins * 4;
+      };
+      candidates.sort((a, b) => score(a) - score(b));
+      const best = candidates[0];
+      const colliding = points.length > 4 && place.id !== selectedId && score(best) > 100;
+      if (!colliding) placed.push(best);
+      positions.set(place.id, { ...best, colliding });
     });
-    userGpsMarker = L.marker([lat, lng], { icon: icon, zIndexOffset: 1000 }).addTo(mapInstance);
+    return positions;
   }
-
-  if (userGpsAccuracyCircle) {
-    userGpsAccuracyCircle.setLatLng([lat, lng]);
-    userGpsAccuracyCircle.setRadius(accuracy);
-  } else {
-    userGpsAccuracyCircle = L.circle([lat, lng], {
-      radius: accuracy,
-      color: '#3b82f6',
-      weight: 1,
-      fillColor: '#93c5fd',
-      fillOpacity: 0.15
-    }).addTo(mapInstance);
+  function refreshPins() {
+    markers.forEach(({ element, items }) => {
+      const selected = items.some(place => place.id === selectedId);
+      element.classList.toggle('is-selected', selected);
+      element.style.zIndex = selected ? '3' : '2';
+      const control = element.querySelector('button');
+      if (items.length === 1) control.setAttribute('aria-pressed', String(selected));
+    });
   }
-}
-
-/**
- * 디바이스 자이로스코프 나침반 각도 갱신
- */
-function updateUserCompassHeading(headingDeg) {
-  currentUserHeading = headingDeg;
-  const cone = document.getElementById('user-heading-cone');
-  if (cone) {
-    cone.style.transform = `rotate(${headingDeg}deg)`;
-  }
-}
-
-/**
- * 장소 체크인 시 시각적 축하 펄스 이펙트
- */
-function highlightCheckInPlace(placeId) {
-  const marker = activeMarkersMap[placeId];
-  if (marker && mapInstance) {
-    const el = marker.getElement ? marker.getElement() : (marker._icon || null);
-    if (el && el.classList) {
-      el.classList.add('stamp-celebrate-pulse');
-      setTimeout(() => el.classList.remove('stamp-celebrate-pulse'), 3000);
+  function drawMarkers() {
+    if (!map) return;
+    const groups = markerGroups(activePlaces());
+    const labels = placeLabels(groups);
+    const next = new Set();
+    let lostFocus = false;
+    groups.forEach(items => {
+      const key = items.map(item => item.id).sort().join('|');
+      next.add(key);
+      const position = groupPosition(items);
+      const coords = items.length === 1 ? lngLat(items[0]) : map.unproject([position.x, position.y]);
+      let record = markers.get(key);
+      if (!record) {
+        const element = node('div', 'alley-marker');
+        const control = button('', () => {
+          if (items.length === 1) { browsing = false; comparing = false; emit('alley:select', items[0].id); }
+          else emit('alley:region', items[0].region);
+        }, 'map-pin');
+        const label = node('span', 'map-pin-label', groupLabel(items));
+        const dot = node('span', 'map-pin-dot');
+        dot.setAttribute('aria-hidden', 'true');
+        control.append(dot, label);
+        control.setAttribute('aria-label', items.length > 1 ? t('{region} {count}곳 지도 열기', { region: t(items[0].region === 'anguk' ? '안국' : '서촌'), count: items.length }) : items[0].name + (items[0].locationSource === 'legacy' ? ` · ${t('대략적 위치')}` : ''));
+        control.addEventListener('click', event => event.stopPropagation());
+        control.addEventListener('keydown', event => event.stopPropagation());
+        element.classList.toggle('is-cluster', items.length > 1);
+        element.classList.toggle('is-approximate', items.length === 1 && items[0].locationSource === 'legacy');
+        element.append(control);
+        const marker = new maplibregl.Marker({ element, anchor: 'center' }).setLngLat(coords).addTo(map);
+        // MapLibre supplies a generic button role; the nested native button owns interaction.
+        element.removeAttribute('role');
+        element.removeAttribute('aria-label');
+        record = { marker, element, items };
+        markers.set(key, record);
+      } else record.marker.setLngLat(coords);
+      if (items.length === 1) {
+        const box = labels.get(items[0].id);
+        const label = record.element.querySelector('.map-pin-label');
+        label.style.left = `${box.x - position.x + 22}px`;
+        label.style.top = `${box.y - position.y + 22}px`;
+        label.style.width = `${box.width}px`;
+        label.classList.toggle('is-colliding', box.colliding);
+      }
+      const inView = position.x >= 0 && position.x <= host.clientWidth && position.y >= 0 && position.y <= host.clientHeight;
+      record.element.style.visibility = inView ? '' : 'hidden';
+      record.element.querySelector('button').tabIndex = inView ? 0 : -1;
+    });
+    markers.forEach((record, key) => {
+      if (!next.has(key)) {
+        lostFocus ||= record.element.contains(document.activeElement);
+        record.marker.remove();
+        markers.delete(key);
+      }
+    });
+    refreshPins();
+    if (lostFocus && !selection.contains(document.activeElement)) {
+      (selection.querySelector('button') || map.getCanvas()).focus({ preventScroll: true });
     }
   }
-}
-
-
-
-/**
- * 레이더 서클 렌더링
- */
-function renderRadarCircle(lat, lng, radius = 350) {
-  if (!mapInstance) return;
-
-  if (radarCircleLayer) {
-    mapInstance.removeLayer(radarCircleLayer);
+  function updateStatus(message = statusMessage) {
+    statusMessage = message;
+    status.textContent = t(!navigator.onLine ? '인터넷 연결이 끊겼어요. 장소 정보의 주소를 이용해 주세요.' : message);
+    retry.hidden = !failed && !(slow && map);
   }
-
-  radarCircleLayer = L.circle([lat, lng], {
-    radius: radius,
-    color: '#2563eb',
-    weight: 2,
-    dashArray: '6, 6',
-    fillColor: '#3b82f6',
-    fillOpacity: 0.08,
-    className: 'radar-scan-circle'
-  }).addTo(mapInstance);
-
-  const isMobile = window.innerWidth <= 900;
-  const targetLat = isMobile ? lat - 0.0018 : lat;
-  mapInstance.flyTo([targetLat, lng], 16, { duration: 0.8 });
-}
-
-function clearRadar() {
-  if (radarCircleLayer && mapInstance) {
-    mapInstance.removeLayer(radarCircleLayer);
-    radarCircleLayer = null;
+  function loadLibrary() {
+    if (libraryPromise) return libraryPromise;
+    const asset = (id, tag, url) => new Promise((resolve, reject) => {
+      const existing = document.getElementById(id);
+      if (existing?.dataset.loaded === 'true') { resolve(); return; }
+      const resource = document.createElement(tag);
+      resource.id = id;
+      if (tag === 'link') { resource.rel = 'stylesheet'; resource.href = url; }
+      else { resource.src = url; resource.async = true; }
+      resource.onload = () => { resource.dataset.loaded = 'true'; resolve(); };
+      resource.onerror = () => { resource.remove(); reject(new Error('Map asset unavailable')); };
+      document.head.append(resource);
+    });
+    libraryPromise = Promise.allSettled([
+      asset('map-library-style', 'link', 'vendor/maplibre/maplibre-gl.css'),
+      window.maplibregl ? Promise.resolve() : asset('map-library-script', 'script', 'vendor/maplibre/maplibre-gl.js')
+    ]).then(results => {
+      if (results.some(result => result.status === 'rejected')) {
+        libraryPromise = undefined;
+        throw new Error('Map library unavailable');
+      }
+    });
+    return libraryPromise;
   }
-  if (dynamicLineLayer && mapInstance) {
-    mapInstance.removeLayer(dynamicLineLayer);
-    dynamicLineLayer = null;
+  function startLoading() {
+    slow = false;
+    clearTimeout(loadTimer);
+    updateStatus('지도 불러오는 중…');
+    loadTimer = setTimeout(() => {
+      if (!map?.loaded()) {
+        slow = true;
+        updateStatus('지도를 불러오는 데 시간이 걸려요. 아래 장소 목록은 계속 이용할 수 있어요.');
+      }
+    }, 15000);
   }
-}
-
-/**
- * 두 좌표 사이 거리 (미터) 및 도보 시간 계산
- */
-function calculateDistance(lat1, lon1, lat2, lon2) {
-  const R = 6371e3; // Earth radius in meters
-  const φ1 = lat1 * Math.PI / 180;
-  const φ2 = lat2 * Math.PI / 180;
-  const Δφ = (lat2 - lat1) * Math.PI / 180;
-  const Δλ = (lon2 - lon1) * Math.PI / 180;
-
-  const a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
-            Math.cos(φ1) * Math.cos(φ2) *
-            Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-
-  const directDist = R * c;
-  // Apply urban alley detour factor (~1.25x)
-  return Math.round(directDist * 1.25);
-}
-
-function calculateWalkingMinutes(distanceMeters) {
-  // Average pedestrian alley speed: ~70m per min
-  return Math.max(1, Math.round(distanceMeters / 70));
-}
-
-function flyToRegion(regionKey) {
-  if (!mapInstance || !BLIND_SPOT_DATA.regions[regionKey]) return;
-  const region = BLIND_SPOT_DATA.regions[regionKey];
-  mapInstance.flyTo(region.center, region.zoom, { duration: 0.9 });
-  renderPlaceMarkers(regionKey, currentCategoryFilter);
-}
-
-function resize() {
-  if (mapInstance) {
-    setTimeout(() => {
-      mapInstance.invalidateSize();
-    }, 300);
+  async function ensure() {
+    if (!host.clientWidth || !host.clientHeight) return false;
+    if (map) return true;
+    if (initialization) return initialization;
+    initialization = initialize().finally(() => { initialization = undefined; });
+    return initialization;
   }
-}
-
-function drawDestinationPairLine(hotCoords, gemCoords, hotName = '', gemName = '') {
-  if (!mapInstance) return;
-
-  if (dynamicLineLayer) {
-    dynamicLineLayer.clearLayers();
-  } else {
-    dynamicLineLayer = L.layerGroup().addTo(mapInstance);
+  async function initialize() {
+    startLoading();
+    try {
+      await loadLibrary();
+      // A user may return to the list while the assets are downloading.
+      if (!host.clientWidth || !host.clientHeight) { clearTimeout(loadTimer); return false; }
+      const response = await fetch('maps/alley-style.json?v=22');
+      if (!response.ok) throw new Error('Map style unavailable');
+      const style = window.AlleyI18n.mapStyle(await response.json());
+      if (!host.clientWidth || !host.clientHeight) { clearTimeout(loadTimer); return false; }
+      map = new maplibregl.Map({ container: host, style, center: [126.975, 37.579],
+        zoom: 14, minZoom: 11, maxZoom: 19, maxPitch: 0, dragRotate: false, pitchWithRotate: false,
+        touchPitch: false, attributionControl: false, localIdeographFontFamily: 'Yu Gothic, Microsoft YaHei, Malgun Gothic, sans-serif',
+        locale: { 'NavigationControl.ZoomIn': t('확대'), 'NavigationControl.ZoomOut': t('축소'),
+          'AttributionControl.ToggleAttribution': t('지도 데이터 출처'), 'Map.Title': t('안국·서촌 장소 지도') } });
+      map.touchZoomRotate.disableRotation();
+      map.scrollZoom.disable();
+      map.keyboard.disableRotation();
+      map.addControl(new maplibregl.ScaleControl({ maxWidth: 80, unit: 'metric' }), 'bottom-left');
+      map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+      map.on('moveend', drawMarkers);
+      map.on('dragstart', () => { cameraPlaceId = ''; });
+      map.on('zoomstart', event => { if (event.originalEvent) cameraPlaceId = ''; });
+      map.on('error', () => {
+        failed = true;
+        clearTimeout(loadTimer);
+        updateStatus('배경 지도 일부를 불러오지 못했어요. 장소 정보와 주소는 볼 수 있어요.');
+      });
+      map.on('load', () => {
+        clearTimeout(loadTimer);
+        slow = false;
+        if (!failed) updateStatus('');
+        drawMarkers();
+      });
+      map.on('webglcontextlost', () => {
+        failed = true;
+        updateStatus('지도 표시가 중단됐어요. 다시 불러오거나 장소 주소를 확인해 주세요.');
+      });
+      return true;
+    } catch {
+      clearTimeout(loadTimer);
+      map?.remove();
+      map = undefined;
+      failed = true;
+      updateStatus('지도를 표시하지 못했어요. 다시 불러오거나 아래에서 장소를 골라 주소를 확인해 주세요.');
+      return false;
+    }
   }
-
-  const polyline = L.polyline([hotCoords, gemCoords], {
-    color: '#059669',
-    weight: 4,
-    opacity: 0.9,
-    dashArray: '6, 8',
-    lineCap: 'round',
-    className: 'navigation-route-line'
+  async function showMap() {
+    renderSelection();
+    if (await ensure() && host.clientWidth && host.clientHeight) {
+      map.resize();
+      if (!focusCameraPlace()) fit();
+      drawMarkers();
+    }
+  }
+  retry.addEventListener('click', () => {
+    if (initialization) return;
+    clearTimeout(loadTimer);
+    markers.forEach(record => record.marker.remove());
+    markers.clear();
+    map?.remove();
+    map = undefined;
+    failed = false;
+    slow = false;
+    showMap();
   });
-
-  dynamicLineLayer.addLayer(polyline);
-
-  const midLat = (hotCoords[0] + gemCoords[0]) / 2;
-  const midLng = (hotCoords[1] + gemCoords[1]) / 2;
-  const dist = calculateDistance(hotCoords[0], hotCoords[1], gemCoords[0], gemCoords[1]);
-  const walkMin = calculateWalkingMinutes(dist);
-
-  const midIcon = L.divIcon({
-    className: 'pair-distance-badge',
-    html: `<div style="background: #0f172a; color: #ffffff; padding: 3px 8px; border-radius: 9999px; font-size: 0.68rem; font-weight: 800; border: 1.5px solid #10b981; box-shadow: 0 2px 8px rgba(0,0,0,0.3); white-space: nowrap;">🚶 도보 ${walkMin}분 (${dist}m) 골목 대안</div>`,
-    iconSize: [140, 22],
-    iconAnchor: [70, 11]
+  document.getElementById('map-zoom-in').addEventListener('click', () => { cameraPlaceId = ''; map?.zoomIn({ duration: 0 }); });
+  document.getElementById('map-zoom-out').addEventListener('click', () => { cameraPlaceId = ''; map?.zoomOut({ duration: 0 }); });
+  window.addEventListener('offline', () => updateStatus());
+  window.addEventListener('online', () => {
+    if (map?.loaded() && !failed) { slow = false; updateStatus(''); return; }
+    failed = true;
+    updateStatus('인터넷에 다시 연결됐어요. 지도를 다시 불러와 주세요.');
   });
-
-  const midMarker = L.marker([midLat, midLng], { icon: midIcon });
-  dynamicLineLayer.addLayer(midMarker);
-
-  const isMobile = window.innerWidth <= 900;
-  const paddingOptions = isMobile ? { paddingTopLeft: [40, 90], paddingBottomRight: [40, 160] } : { padding: [80, 80] };
-  mapInstance.fitBounds(polyline.getBounds(), paddingOptions);
-}
-
-function clearDestinationPairLine() {
-  if (dynamicLineLayer) {
-    dynamicLineLayer.clearLayers();
-  }
-}
-
-window.MapManager = {
-  initMap,
-  renderPlaceMarkers,
-  flyToRegion,
-  focusPlace,
-  showWalkingRoute,
-  hideWalkingRoute,
-  renderRedZone,
-  updateUserGpsLocation,
-  updateUserCompassHeading,
-  highlightCheckInPlace,
-  drawNavigationRoute,
-  clearNavigationRoute,
-  drawDestinationPairLine,
-  clearDestinationPairLine,
-  renderRadarCircle,
-  clearRadar,
-  calculateDistance,
-  calculateWalkingMinutes,
-  resize
+  document.getElementById('map-reset').addEventListener('click', () => {
+    focusedPair = '';
+    selectedId = '';
+    browsing = false;
+    cameraPlaceId = '';
+    emit('alley:select', '');
+    emit('alley:reset-map');
+    showMap();
+  });
+  new ResizeObserver(() => {
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(async () => {
+      if (!host.clientWidth || !host.clientHeight) return;
+      const existing = Boolean(map);
+      if (await ensure() && host.clientWidth && host.clientHeight) {
+        map.resize();
+        if ((!existing || focusedPair) && !focusCameraPlace()) fit();
+        drawMarkers();
+      }
+    });
+  }).observe(host);
+  new ResizeObserver(updateChooserHint).observe(selection);
+  return {
+    render(items) {
+      visible = items;
+      focusedPair = '';
+      cameraPlaceId = '';
+      browsing = false;
+      comparing = false;
+      if (!activePlaces().some(place => place.id === selectedId)) selectedId = '';
+      showMap();
+    },
+    show(pairId) {
+      cameraPlaceId = '';
+      focusedPair = visible.some(pair => pair.id === pairId) ? pairId : '';
+      browsing = false;
+      comparing = false;
+      if (!activePlaces().some(place => place.id === selectedId)) selectedId = '';
+      showMap();
+    },
+    select(id) {
+      if (id !== cameraPlaceId) cameraPlaceId = '';
+      selectedId = id;
+      browsing = false;
+      comparing = false;
+      drawMarkers();
+      renderSelection();
+      const place = places.find(item => item.id === id);
+      announcement.textContent = place ? t('{name} 선택. 지도 아래에 장소 정보가 표시됩니다.', { name: place.name }) : '';
+    }
+  };
 };
-
-

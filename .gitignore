@@ -5,3 +5,7 @@ tmp/
 node_modules/
 .vercel/
 *.log
+__pycache__/
+*.py[cod]
+research/source-pages-v23/
+research/source-pages-v26/

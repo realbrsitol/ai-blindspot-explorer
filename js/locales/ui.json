@@ -1,0 +1,997 @@
+{
+  "AI 추천에 없는 안국·서촌": [
+    "Beyond AI Picks · Anguk & Seochon",
+    "AIが見落とした安国・西村",
+    "AI推荐之外的安国·西村"
+  ],
+  "AI 추천에 없는": [
+    "Beyond AI Picks",
+    "AIが見落とした",
+    "AI推荐之外"
+  ],
+  "안국·서촌": [
+    "Anguk · Seochon",
+    "安国・西村",
+    "安国·西村"
+  ],
+  "AI 추천에 없는 안국·서촌. 핫플과 골목의 다른 선택을 사진과 지도로 나란히 비교해 보세요.": [
+    "Beyond AI Picks: Anguk and Seochon. Compare popular spots with alley alternatives through photos and maps.",
+    "AIが見落とした安国・西村。人気スポットと路地の別の選択肢を、写真と地図で見比べてみましょう。",
+    "AI推荐之外的安国·西村。通过照片和地图，对比热门地点与小巷里的其他选择。"
+  ],
+  "장소 목록으로 건너뛰기": [
+    "Skip to places",
+    "スポット一覧へ",
+    "跳转到地点列表"
+  ],
+  "안국 · 서촌": [
+    "Anguk · Seochon",
+    "安国・西村",
+    "安国·西村"
+  ],
+  "안국": [
+    "Anguk",
+    "安国",
+    "安国"
+  ],
+  "서촌": [
+    "Seochon",
+    "西村",
+    "西村"
+  ],
+  "전체": [
+    "All",
+    "全エリア",
+    "全部地区"
+  ],
+  "모두": [
+    "All",
+    "すべて",
+    "全部"
+  ],
+  "먹거리": [
+    "Food",
+    "食事",
+    "美食"
+  ],
+  "쉬기·산책": [
+    "Rest & walks",
+    "休憩・散策",
+    "休息·散步"
+  ],
+  "문화·역사": [
+    "Culture",
+    "文化・歴史",
+    "文化·历史"
+  ],
+  "체험·선물": [
+    "Crafts & gifts",
+    "体験・お土産",
+    "体验·伴手礼"
+  ],
+  "비·더위": [
+    "Rain & heat",
+    "雨・暑い日",
+    "雨天·避暑"
+  ],
+  "아이와": [
+    "With kids",
+    "子どもと",
+    "亲子"
+  ],
+  "오늘은,": [
+    "Where to",
+    "今日は、",
+    "今天，"
+  ],
+  "어디로?": [
+    "today?",
+    "どこへ？",
+    "去哪儿？"
+  ],
+  "오늘은, 어디로?": [
+    "Where to today?",
+    "今日は、どこへ？",
+    "今天，去哪儿？"
+  ],
+  "핫플과 골목의 다른 선택을 나란히 비교해요.": [
+    "Compare popular spots with alley alternatives.",
+    "人気スポットと路地の別の選択肢を見比べよう。",
+    "对比热门地点与小巷里的其他选择。"
+  ],
+  "언어 선택": [
+    "Language",
+    "言語",
+    "语言"
+  ],
+  "장소 비교": [
+    "Compare places",
+    "スポット比較",
+    "地点对比"
+  ],
+  "동네 선택": [
+    "Choose an area",
+    "エリア選択",
+    "选择地区"
+  ],
+  "여행 목적 선택": [
+    "Choose your visit purpose",
+    "目的を選ぶ",
+    "选择出游目的"
+  ],
+  "여행 목적": [
+    "Visit purpose",
+    "目的",
+    "出游目的"
+  ],
+  "지도 보기": [
+    "Map",
+    "地図",
+    "地图"
+  ],
+  "비교 보기": [
+    "Compare",
+    "比較",
+    "对比"
+  ],
+  "비교 장소 지도": [
+    "Map of places to compare",
+    "比較するスポットの地図",
+    "对比地点地图"
+  ],
+  "장소 지도": [
+    "Places map",
+    "スポット地図",
+    "地点地图"
+  ],
+  "전체 위치": [
+    "Show all",
+    "全体表示",
+    "显示全部"
+  ],
+  "지도 축소": [
+    "Zoom out",
+    "縮小",
+    "缩小"
+  ],
+  "지도 확대": [
+    "Zoom in",
+    "拡大",
+    "放大"
+  ],
+  "축소": [
+    "Zoom out",
+    "縮小",
+    "缩小"
+  ],
+  "확대": [
+    "Zoom in",
+    "拡大",
+    "放大"
+  ],
+  "장소 지도. 장소명을 누르면 아래 카드에서 정보를 볼 수 있습니다.": [
+    "Places map. Select a name for details below.",
+    "スポット地図。名前を選ぶと下に情報が表示されます。",
+    "地点地图。选择名称后，可在下方查看信息。"
+  ],
+  "지도의 위쪽은 북쪽": [
+    "North is at the top",
+    "地図の上が北",
+    "地图上方为北"
+  ],
+  "↑ 북": [
+    "↑ N",
+    "↑ 北",
+    "↑ 北"
+  ],
+  "다시 불러오기": [
+    "Reload map",
+    "再読み込み",
+    "重新加载"
+  ],
+  "지도에서 장소 선택": [
+    "Choose a place on the map",
+    "地図でスポットを選択",
+    "在地图中选择地点"
+  ],
+  "장소 목록을 보려면 브라우저의 JavaScript를 켜 주세요.": [
+    "Enable JavaScript to see the places.",
+    "一覧を見るにはJavaScriptを有効にしてください。",
+    "请启用JavaScript以查看地点列表。"
+  ],
+  "골목을 방문하기 전에": [
+    "Before you visit",
+    "訪問前に",
+    "出发前须知"
+  ],
+  "시간은 공개된 기본 안내이며 실시간 영업 상태가 아닙니다. 임시 휴무와 필요한 이용 조건은 각 장소의 확인 링크를 이용해 주세요. 이웃의 일상이 이어지는 골목에서는 조용히 걸어 주세요.": [
+    "Hours are published reference information, not live opening status. Check each venue’s link for temporary closures and entry conditions. Please keep quiet in residential lanes.",
+    "時間は公開された基本情報で、リアルタイムの営業状況ではありません。臨時休業や利用条件は各施設のリンクで確認してください。住宅地の路地では静かに歩きましょう。",
+    "开放时间来自公开资料，并非实时营业状态。临时关闭和入场条件请通过各地点的链接确认。在居民生活的小巷中，请保持安静。"
+  ],
+  "북촌로11길 일대 레드존에는 관광객 방문 시간 제한이 있습니다.": [
+    "Tourist visiting hours are restricted in the red zone around Bukchon-ro 11-gil.",
+    "北村路11キル周辺のレッドゾーンでは観光客の訪問時間が制限されています。",
+    "北村路11街一带的红色区域设有游客到访时间限制。"
+  ],
+  "서울한옥포털 안내 ↗": [
+    "Seoul Hanok Portal guidance ↗",
+    "ソウル韓屋ポータルの案内 ↗",
+    "首尔韩屋门户网站说明 ↗"
+  ],
+  "목록으로 돌아가기": [
+    "Back to list",
+    "一覧に戻る",
+    "返回列表"
+  ],
+  "지도로 돌아가기": [
+    "Back to map",
+    "地図に戻る",
+    "返回地图"
+  ],
+  "목록": [
+    "List",
+    "一覧",
+    "列表"
+  ],
+  "지도": [
+    "Map",
+    "地図",
+    "地图"
+  ],
+  "장소 정보": [
+    "Place details",
+    "スポット情報",
+    "地点详情"
+  ],
+  "외부 사이트의 언어와 현장 외국어 응대는 이 앱의 언어 설정과 다를 수 있습니다.": [
+    "External websites and the languages spoken at venues may differ from your app language.",
+    "外部サイトの言語や施設での外国語対応は、アプリの言語設定と異なる場合があります。",
+    "外部网站的语言及场所的外语服务可能与本应用的语言设置不同。"
+  ],
+  "링크 복사": [
+    "Copy link",
+    "リンクをコピー",
+    "复制链接"
+  ],
+  "복사할 장소 링크": [
+    "Place link to copy",
+    "コピー用スポットリンク",
+    "待复制的地点链接"
+  ],
+  "비용": [
+    "Cost",
+    "料金",
+    "费用"
+  ],
+  "이용": [
+    "How to visit",
+    "利用方法",
+    "游览方式"
+  ],
+  "주소": [
+    "Address",
+    "住所",
+    "地址"
+  ],
+  "운영시간·휴무와 공식 안내": [
+    "Hours, closures & official information",
+    "時間・休業日・公式案内",
+    "开放时间、休息日与官方说明"
+  ],
+  "방문 팁과 이동 편의": [
+    "Visit tips & accessibility",
+    "訪問のヒント・移動の配慮",
+    "游览提示与无障碍信息"
+  ],
+  "방문 전 확인할 것": [
+    "Check before visiting",
+    "訪問前に確認すること",
+    "到访前需确认"
+  ],
+  "장소를 찾은 뒤 출발지와 도보 경로를 설정하세요.": [
+    "Find the place, then set your starting point and walking route.",
+    "場所を見つけてから出発地と徒歩ルートを設定してください。",
+    "找到地点后，请设置出发地和步行路线。"
+  ],
+  "네이버 지도에서 보기": [
+    "Open in Naver Map",
+    "NAVERマップで見る",
+    "在Naver地图中查看"
+  ],
+  "한국어 주소 복사": [
+    "Copy Korean address",
+    "韓国語の住所をコピー",
+    "复制韩文地址"
+  ],
+  "복사할 한국어 주소": [
+    "Korean address to copy",
+    "コピー用の韓国語住所",
+    "待复制的韩文地址"
+  ],
+  "한국어 주소를 복사했어요.": [
+    "Korean address copied.",
+    "韓国語の住所をコピーしました。",
+    "已复制韩文地址。"
+  ],
+  "아래 주소를 길게 누르거나 복사해 주세요.": [
+    "Select and copy the address below.",
+    "下の住所を長押しするか、選択してコピーしてください。",
+    "请长按或选中下方地址进行复制。"
+  ],
+  "사진 불러오는 중": [
+    "Loading photo",
+    "写真を読み込み中",
+    "正在加载照片"
+  ],
+  "사진을 불러오지 못했어요": [
+    "Photo unavailable",
+    "写真を読み込めませんでした",
+    "无法加载照片"
+  ],
+  "자세히 보기 ›": [
+    "View details ›",
+    "詳しく見る ›",
+    "查看详情 ›"
+  ],
+  "자세히 보기": [
+    "View details",
+    "詳しく見る",
+    "查看详情"
+  ],
+  "기본 운영": [
+    "Usual hours",
+    "通常の利用時間",
+    "常规开放时间"
+  ],
+  "두 곳의 위치 비교": [
+    "Compare locations",
+    "2か所の位置を比較",
+    "比较两个地点的位置"
+  ],
+  "비교 링크": [
+    "Share link",
+    "比較リンク",
+    "对比链接"
+  ],
+  "두 곳 모두 어렵다면": [
+    "If neither works for you",
+    "どちらも難しいときは",
+    "如果两处都不合适"
+  ],
+  "다른 상황을 골라 비교해 보세요. 각 장소의 운영 안내를 확인해 주세요.": [
+    "Try another comparison. Check each place’s visitor information.",
+    "別のテーマで比較しましょう。各施設の利用案内を確認してください。",
+    "试试其他主题的对比，并查看各地点的开放说明。"
+  ],
+  "두 곳 모두 기본 월요일 휴관입니다. 공예박물관은 공휴일 예외가 있어요.": [
+    "Both normally close on Mondays. The Craft Museum has public-holiday exceptions.",
+    "どちらも基本は月曜休館です。工芸博物館には祝日の例外があります。",
+    "两处通常周一闭馆，工艺博物馆在法定节假日有例外。"
+  ],
+  "두 장소의 비교 링크를 복사했어요.": [
+    "Comparison link copied.",
+    "比較リンクをコピーしました。",
+    "已复制对比链接。"
+  ],
+  "장소 링크를 복사했어요.": [
+    "Place link copied.",
+    "スポットのリンクをコピーしました。",
+    "已复制地点链接。"
+  ],
+  "아래 링크를 길게 누르거나 복사해 주세요.": [
+    "Select and copy the link below.",
+    "下のリンクを長押しするか、選択してコピーしてください。",
+    "请长按或选中下方链接进行复制。"
+  ],
+  "복사할 두 장소 비교 링크": [
+    "Comparison link to copy",
+    "コピー用の比較リンク",
+    "待复制的对比链接"
+  ],
+  "전화로 문의": [
+    "Call the venue",
+    "電話で問い合わせ",
+    "电话咨询"
+  ],
+  "English info ↗": [
+    "English information ↗",
+    "英語の案内 ↗",
+    "英文信息 ↗"
+  ],
+  "시설 안내": [
+    "Facilities",
+    "施設案内",
+    "设施说明"
+  ],
+  "매장 소식": [
+    "Venue updates",
+    "店舗のお知らせ",
+    "店铺动态"
+  ],
+  "전시·프로그램": [
+    "Exhibitions & programs",
+    "展示・プログラム",
+    "展览·活动"
+  ],
+  "운영기관 소식": [
+    "Operator updates",
+    "運営機関のお知らせ",
+    "运营机构动态"
+  ],
+  "추가 방문 안내": [
+    "More visitor information",
+    "その他の利用案内",
+    "更多到访说明"
+  ],
+  "실시간 운영 상태가 아닙니다.": [
+    "This is not live opening information.",
+    "リアルタイムの営業状況ではありません。",
+    "这并非实时营业信息。"
+  ],
+  "사진": [
+    "Photo",
+    "写真",
+    "照片"
+  ],
+  "사진 출처": [
+    "Photo source",
+    "写真の出典",
+    "照片来源"
+  ],
+  "원본 비율 유지 · 크기 조정·WebP 변환": [
+    "Original proportions retained · resized and converted to WebP",
+    "元の比率を維持・リサイズ・WebP変換",
+    "保留原始比例·调整尺寸并转换为WebP"
+  ],
+  "두 동네에서 찾기": [
+    "Search both areas",
+    "両エリアで探す",
+    "在两个地区查找"
+  ],
+  "돌아가기": [
+    "Back",
+    "戻る",
+    "返回"
+  ],
+  "비교 고르기": [
+    "Choose a comparison",
+    "比較テーマを選ぶ",
+    "选择对比主题"
+  ],
+  "어느 곳을 살펴볼까요?": [
+    "Which place would you like to see?",
+    "どちらを見ますか？",
+    "想了解哪一处？"
+  ],
+  "장소 선택": [
+    "Choose a place",
+    "スポットを選ぶ",
+    "选择地点"
+  ],
+  "선택한 장소": [
+    "Selected place",
+    "選択したスポット",
+    "已选地点"
+  ],
+  "목록을 위아래로 밀어 더 볼 수 있어요": [
+    "Scroll the list to see more places",
+    "一覧を上下にスクロールできます",
+    "上下滑动列表查看更多地点"
+  ],
+  "비교 중인 두 장소": [
+    "The two places being compared",
+    "比較中の2か所",
+    "正在对比的两个地点"
+  ],
+  "변경": [
+    "Change",
+    "変更",
+    "更换"
+  ],
+  "비교 내용 보기": [
+    "View comparison",
+    "比較を見る",
+    "查看对比"
+  ],
+  "두 곳 비교": [
+    "Compare two places",
+    "2か所を比較",
+    "对比两个地点"
+  ],
+  "대략적 위치 · 정확한 입구는 별도 확인": [
+    "Approximate location · check the actual entrance",
+    "おおよその位置・入口は別途確認",
+    "大致位置·请另行确认实际入口"
+  ],
+  "대략적 위치": [
+    "Approximate location",
+    "おおよその位置",
+    "大致位置"
+  ],
+  "주변": [
+    "Nearby",
+    "周辺",
+    "附近"
+  ],
+  "이 동네에는 선택한 목적의 비교가 아직 없어요. 위에서 목적을 바꾸거나 ‘전체’ 동네를 선택해 주세요.": [
+    "No comparisons for this purpose in this area yet. Change the purpose or select all areas.",
+    "このエリアには選んだ目的の比較がまだありません。目的を変えるか、全エリアを選んでください。",
+    "该地区暂无符合此目的的对比。请更换目的，或选择全部地区。"
+  ],
+  "인터넷 연결이 끊겼어요. 장소 정보의 주소를 이용해 주세요.": [
+    "You are offline. Use the address in the place details.",
+    "オフラインです。スポット情報の住所をご利用ください。",
+    "网络已断开，请使用地点详情中的地址。"
+  ],
+  "지도 불러오는 중…": [
+    "Loading map…",
+    "地図を読み込み中…",
+    "正在加载地图…"
+  ],
+  "지도를 불러오는 데 시간이 걸려요. 아래 장소 목록은 계속 이용할 수 있어요.": [
+    "The map is taking a while. You can still use the place list below.",
+    "地図の読み込みに時間がかかっています。下の一覧は引き続き利用できます。",
+    "地图加载较慢，您仍可使用下方地点列表。"
+  ],
+  "배경 지도 일부를 불러오지 못했어요. 장소 정보와 주소는 볼 수 있어요.": [
+    "Part of the map could not load. Place details and addresses are still available.",
+    "地図の一部を読み込めませんでした。スポット情報と住所は確認できます。",
+    "部分底图无法加载，地点信息和地址仍可查看。"
+  ],
+  "지도 표시가 중단됐어요. 다시 불러오거나 장소 주소를 확인해 주세요.": [
+    "Map display stopped. Reload it or check the place’s address.",
+    "地図の表示が停止しました。再読み込みするか住所をご確認ください。",
+    "地图显示已中断，请重新加载或查看地点地址。"
+  ],
+  "지도를 표시하지 못했어요. 다시 불러오거나 아래에서 장소를 골라 주소를 확인해 주세요.": [
+    "The map is unavailable. Reload it or choose a place below to see its address.",
+    "地図を表示できませんでした。再読み込みするか、下からスポットを選んで住所を確認してください。",
+    "无法显示地图。请重新加载，或在下方选择地点查看地址。"
+  ],
+  "인터넷에 다시 연결됐어요. 지도를 다시 불러와 주세요.": [
+    "You are back online. Please reload the map.",
+    "接続が戻りました。地図を再読み込みしてください。",
+    "网络已恢复，请重新加载地图。"
+  ],
+  "지도 데이터 출처": [
+    "Map attribution",
+    "地図データの出典",
+    "地图数据来源"
+  ],
+  "안국·서촌 장소 지도": [
+    "Anguk and Seochon places map",
+    "安国・西村のスポット地図",
+    "安国·西村地点地图"
+  ],
+  "스타일 출처": [
+    "Style credits",
+    "スタイルの出典",
+    "地图样式来源"
+  ],
+  "야간개관 특별 안내 기간이 끝났습니다. 최신 관람 일정을 확인해 주세요.": [
+    "The special evening-opening period has ended. Check the latest visiting schedule.",
+    "特別夜間開館の案内期間は終了しました。最新の日程を確認してください。",
+    "特别夜间开放公告期已结束，请确认最新参观安排。"
+  ],
+  "{name} 장소 정보 보기": [
+    "View details for {name}",
+    "{name}の情報を見る",
+    "查看{name}的详情"
+  ],
+  "{names} 비교": [
+    "Compare {names}",
+    "{names}を比較",
+    "对比{names}"
+  ],
+  "{name} {label} (새 창)": [
+    "{name}: {label} (opens in a new tab)",
+    "{name}：{label}（新しいタブ）",
+    "{name}：{label}（新标签页）"
+  ],
+  "{names} 지도에서 비교": [
+    "Compare {names} on the map",
+    "{names}を地図で比較",
+    "在地图上对比{names}"
+  ],
+  "{title} 두 장소 비교 링크 복사": [
+    "Copy the comparison link: {title}",
+    "比較リンクをコピー：{title}",
+    "复制对比链接：{title}"
+  ],
+  "{name} {phone} 전화로 문의": [
+    "Call {name} at {phone}",
+    "{name}（{phone}）に電話",
+    "致电{name}：{phone}"
+  ],
+  "앱 지도는 대략적인 위치입니다. 정확한 입구는 외부 지도와 운영자 안내에서 확인해 주세요.": [
+    "This map shows an approximate location. Check the actual entrance using an external map and the venue’s guidance.",
+    "アプリはおおよその位置を表示しています。実際の入口は外部地図と施設の案内で確認してください。",
+    "应用地图显示的是大致位置。实际入口请参照外部地图和场所说明。"
+  ],
+  "앱 지도는 장소의 대표 위치입니다({source}). 실제 입구와 도보 경로는 외부 지도에서 확인해 주세요.": [
+    "The map uses a representative location ({source}). Check an external map for the entrance and walking route.",
+    "地図は代表地点を表示しています（{source}）。入口と徒歩ルートは外部地図で確認してください。",
+    "地图使用地点的代表坐标（{source}）。实际入口和步行路线请在外部地图中确认。"
+  ],
+  "↔ {name}도 살펴보기": [
+    "↔ Also explore {name}",
+    "↔ {name}も見る",
+    "↔ 也看看{name}"
+  ],
+  "{name} 네이버 지도에서 보기 (새 창)": [
+    "Open {name} in Naver Map (new tab)",
+    "{name}をNAVERマップで見る（新しいタブ）",
+    "在Naver地图中查看{name}（新标签页）"
+  ],
+  "비교 {count}개 더 보기 · {remaining}개 남음": [
+    "Show {count} more · {remaining} remaining",
+    "あと{count}件表示・残り{remaining}件",
+    "再看{count}组·剩余{remaining}组"
+  ],
+  "이 동네에는 ‘{category}’ 비교가 아직 없어요.": [
+    "No {category} comparisons in this area yet.",
+    "このエリアには「{category}」の比較がまだありません。",
+    "该地区暂无“{category}”主题的对比。"
+  ],
+  "{count}가지 비교 · {places}곳": [
+    "{count} comparisons · {places} places",
+    "{count}件の比較・{places}か所",
+    "{count}组对比·{places}个地点"
+  ],
+  "{count}곳": [
+    "{count} places",
+    "{count}か所",
+    "{count}处"
+  ],
+  "{region} 지도": [
+    "{region} map",
+    "{region}の地図",
+    "{region}地图"
+  ],
+  "{region} 전체": [
+    "All {region}",
+    "{region}全体",
+    "{region}全图"
+  ],
+  "{region} {count}곳 지도 열기": [
+    "Open {region} map with {count} places",
+    "{region}の{count}か所を地図で開く",
+    "打开{region}的{count}个地点地图"
+  ],
+  "{name} 선택. 지도 아래에 장소 정보가 표시됩니다.": [
+    "{name} selected. Place details appear below the map.",
+    "{name}を選択しました。地図の下に情報が表示されます。",
+    "已选择{name}，地点信息显示在地图下方。"
+  ],
+  "{fields} · {date} 자료 확인": [
+    "{fields} · sources reviewed {date}",
+    "{fields}・資料確認日 {date}",
+    "{fields}·资料核对于{date}"
+  ],
+  "촬영일 미상": [
+    "Date unknown",
+    "撮影日不明",
+    "拍摄日期不详"
+  ],
+  "2025년": [
+    "2025",
+    "2025年",
+    "2025年"
+  ],
+  "2020년": [
+    "2020",
+    "2020年",
+    "2020年"
+  ],
+  "한국관광공사": [
+    "Korea Tourism Organization",
+    "韓国観光公社",
+    "韩国旅游发展局"
+  ],
+  "한국관광공사 제공": [
+    "Korea Tourism Organization",
+    "韓国観光公社提供",
+    "韩国旅游发展局提供"
+  ],
+  "한국관광공사 게시": [
+    "Published by Korea Tourism Organization",
+    "韓国観光公社掲載",
+    "韩国旅游发展局发布"
+  ],
+  "한국관광공사 게시 · 원본 저작자 표기 유지": [
+    "Published by KTO · original author watermark retained",
+    "韓国観光公社掲載・原著作者の表記を維持",
+    "韩国旅游发展局发布·保留原作者水印"
+  ],
+  "네이버블로그 이용 · 한국관광공사 게시": [
+    "Naver blogger 이용 · published by KTO",
+    "NAVERブログ 이용・韓国観光公社掲載",
+    "Naver博主이용·韩国旅游发展局发布"
+  ],
+  "서울관광재단 · 한국관광공사 게시": [
+    "Seoul Tourism Organization · published by KTO",
+    "ソウル観光財団・韓国観光公社掲載",
+    "首尔观光财团·韩国旅游发展局发布"
+  ],
+  "서울시 공공서비스예약 게시": [
+    "Seoul Public Service Reservation",
+    "ソウル市公共サービス予約掲載",
+    "首尔市公共服务预约网站发布"
+  ],
+  "서울관광재단 게시": [
+    "Seoul Tourism Organization",
+    "ソウル観光財団掲載",
+    "首尔观光财团发布"
+  ],
+  "문화재청 · 국가유산포털 제공": [
+    "Cultural Heritage Administration · Heritage Portal",
+    "文化財庁・国家遺産ポータル提供",
+    "文化财厅·国家遗产门户网站提供"
+  ],
+  "문화유산국민신탁 제공": [
+    "National Trust for Cultural Heritage",
+    "文化遺産国民信託提供",
+    "文化遗产国民信托提供"
+  ],
+  "한국관광공사 장소 안내": [
+    "Korea Tourism Organization place guide",
+    "韓国観光公社スポット案内",
+    "韩国旅游公社地点信息"
+  ],
+  "정독도서관 이용시간": [
+    "Jeongdok Library hours",
+    "正読図書館の利用時間",
+    "正读图书馆开放时间"
+  ],
+  "서울공예박물관 관람안내": [
+    "Seoul Museum of Craft Art visitor information",
+    "ソウル工芸博物館の観覧案内",
+    "首尔工艺博物馆参观说明"
+  ],
+  "서울한옥포털 시설 안내": [
+    "Seoul Hanok Portal facility guide",
+    "ソウル韓屋ポータルの施設案内",
+    "首尔韩屋门户网站设施说明"
+  ],
+  "문화유산국민신탁 운영안내": [
+    "National Trust visitor information",
+    "文化遺産国民信託の利用案内",
+    "文化遗产国民信托参观说明"
+  ],
+  "운현궁 운영 안내": [
+    "Unhyeongung visitor information",
+    "雲峴宮の利用案内",
+    "云岘宫参观说明"
+  ],
+  "국립고궁박물관 관람안내": [
+    "National Palace Museum visitor information",
+    "国立古宮博物館の観覧案内",
+    "国立古宫博物馆参观说明"
+  ],
+  "국립민속박물관 본관 안내": [
+    "National Folk Museum visitor information",
+    "国立民俗博物館の本館案内",
+    "国立民俗博物馆本馆说明"
+  ],
+  "국립현대미술관 서울 이용 안내": [
+    "MMCA Seoul visitor information",
+    "国立現代美術館ソウル館の利用案内",
+    "国立现代美术馆首尔馆参观说明"
+  ],
+  "서울시 체험 예약 안내": [
+    "Seoul activity reservations",
+    "ソウル市の体験予約案内",
+    "首尔市体验预约说明"
+  ],
+  "한국관광공사 장소 좌표": [
+    "KTO place coordinates",
+    "韓国観光公社の地点座標",
+    "韩国旅游公社地点坐标"
+  ],
+  "OpenStreetMap 건물 중심": [
+    "OpenStreetMap building center",
+    "OpenStreetMapの建物中心",
+    "OpenStreetMap建筑中心"
+  ],
+  "국가유산포털": [
+    "National Heritage Portal",
+    "国家遺産ポータル",
+    "国家遗产门户网站"
+  ],
+  "서울시 공공서비스예약 지도": [
+    "Seoul reservation map",
+    "ソウル市予約サイトの地図",
+    "首尔市公共服务预约地图"
+  ],
+  "서울관광재단 장소 지도": [
+    "Seoul Tourism Organization map",
+    "ソウル観光財団の地点地図",
+    "首尔观光财团地点地图"
+  ],
+  "공개 방문 안내·주소·위치": [
+    "Published visitor information, address and location",
+    "公開利用案内・住所・位置",
+    "公开参观说明、地址及位置"
+  ],
+  "당일 운영·예약 가능 여부는 방문 전 확인": [
+    "Check same-day opening and reservation availability before visiting",
+    "当日の営業と予約状況は訪問前に確認",
+    "到访前确认当天开放及预约情况"
+  ],
+  "기존 수집 자료 · 영업시간과 이용 조건은 방문 전 재확인": [
+    "Previously collected information; reconfirm hours and visitor conditions",
+    "既存の収集資料。時間と利用条件は訪問前に再確認",
+    "此前收集的资料，请重新确认时间和使用条件"
+  ],
+  "기존 수집 자료 · 시설별 시간과 휴관일은 공식 안내 재확인": [
+    "Previously collected information; reconfirm facility hours and closures",
+    "既存の収集資料。施設別の時間と休館日は公式案内で再確認",
+    "此前收集的资料，请从官方渠道确认各设施时间及休息日"
+  ],
+  "야외 좌석·위치": [
+    "Outdoor seating and location",
+    "屋外席・位置",
+    "户外座位与位置"
+  ],
+  "편의시설 정보가 출처마다 달라 이동 경로는 매장 확인 필요": [
+    "Accessibility information differs by source; confirm the route with the venue",
+    "設備情報が資料により異なるため、移動経路は店舗に確認",
+    "各来源的便利设施信息不一致，请向店铺确认通行路线"
+  ],
+  "장소·단차 안내": [
+    "Place and step information",
+    "場所・段差の案内",
+    "地点及台阶信息"
+  ],
+  "운영·통제 정보와 정확한 입구는 재확인 필요": [
+    "Reconfirm opening, restrictions and the exact entrance",
+    "開放・通行規制と実際の入口は再確認",
+    "需重新确认开放、管制信息及实际入口"
+  ],
+  "운영시간·관람 조건·대표 전화": [
+    "Hours, entry conditions and public phone number",
+    "時間・観覧条件・代表電話",
+    "开放时间、参观条件及公开电话"
+  ],
+  "운영시간·대표 전화": [
+    "Hours and public phone number",
+    "時間・代表電話",
+    "开放时间及公开电话"
+  ],
+  "관람료·프로그램 조건은 운영자 확인 필요": [
+    "Confirm entry fees and program conditions with the operator",
+    "料金・プログラム条件は運営者に確認",
+    "参观费及活动条件需向运营方确认"
+  ],
+  "시간·구매 조건·매장 전화": [
+    "Hours, purchase conditions and venue phone number",
+    "時間・購入条件・店舗電話",
+    "开放时间、购买条件及店铺电话"
+  ],
+  "실제 영업 여부와 가격은 매장 확인 필요": [
+    "Confirm current opening and prices with the venue",
+    "当日の営業と価格は店舗に確認",
+    "实际营业情况与价格需向店铺确认"
+  ],
+  "기존 수집 자료 · 최신 운영시간·관람료는 운영기관 재확인": [
+    "Previously collected information; reconfirm current hours and admission with the operator",
+    "既存の収集資料。最新の時間・料金は運営機関に再確認",
+    "此前收集的资料，请向运营机构确认最新时间及参观费"
+  ],
+  "도시락 주말 시간·휴무·구매액은 공식 자료 간 차이가 있어 재확인 필요": [
+    "Official sources differ on lunchbox weekend hours, closures and minimum spend; reconfirm",
+    "弁当の週末時間・休業・購入額は公式資料で差があるため再確認",
+    "官方资料对便当周末时间、休息日及购买金额存在差异，需再次确认"
+  ],
+  "가격·대기와 접근 경로는 매장 재확인": [
+    "Reconfirm prices, queues and access with the restaurant",
+    "価格・待ち時間・アクセスは店舗に再確認",
+    "价格、排队及通行路线需向餐厅重新确认"
+  ],
+  "관광공사에 남은 이전 시간보다 운영기관의 09:30 개장 안내를 우선": [
+    "The operator’s 09:30 opening takes priority over older KTO hours",
+    "観光公社の旧情報より運営機関の09:30開館案内を優先",
+    "以运营机构09:30开馆的说明为准，优先于旅游机构的旧信息"
+  ],
+  "공식 자료 간 주말 개방시간 차이가 있어 단일 시간으로 확정하지 않음": [
+    "Official sources differ on weekend hours; no single time is asserted",
+    "公式資料の週末時間が異なるため、単一の時間に確定していません",
+    "官方资料的周末开放时间不一致，暂不确定单一时间"
+  ],
+  "어린이관 관람·예약 안내": [
+    "Children’s museum visits and reservations",
+    "子ども博物館の観覧・予約案内",
+    "儿童博物馆参观及预约说明"
+  ],
+  "잔여석과 대상 연령은 선택한 프로그램에서 확인": [
+    "Check remaining places and ages for the chosen program",
+    "空き状況と対象年齢は選んだプログラムで確認",
+    "剩余名额及适用年龄请在所选活动中确认"
+  ],
+  "서울관광재단 장소 안내": [
+    "Seoul Tourism Organization place guide",
+    "ソウル観光財団スポット案内",
+    "首尔旅游财团地点信息"
+  ],
+  "서울관광재단 장소 좌표": [
+    "Seoul Tourism place coordinates",
+    "ソウル観光財団の地点座標",
+    "首尔旅游财团地点坐标"
+  ],
+  "운영자 연결 지도": [
+    "Map linked by the operator",
+    "運営者が案内する地図",
+    "运营方链接地图"
+  ],
+  "한국관광공사 게시 · 원본 표기 유지": [
+    "Published by KTO · original markings retained",
+    "韓国観光公社掲載・原本の表記を維持",
+    "韩国旅游公社刊载，保留原图标识"
+  ],
+  "서울관광재단 게시 · 원본 표기 유지": [
+    "Published by Seoul Tourism · original markings retained",
+    "ソウル観光財団掲載・原本の表記を維持",
+    "首尔旅游财团刊载，保留原图标识"
+  ],
+  "공개 방문 안내·주소·대표 위치": [
+    "Published visitor guide, address and representative location",
+    "公開利用案内・住所・代表位置",
+    "公开到访信息、地址及代表位置"
+  ],
+  "자료 열람일 기준 · 당일 운영·가격·예약은 방문 전 확인": [
+    "Sources read on the stated date; confirm same-day operation, prices and bookings",
+    "記載日に資料を閲覧。当日の営業・価格・予約は訪問前に確認",
+    "以资料查阅日期为准，到访前确认当日营业、价格及预约"
+  ],
+  "카페·차": [
+    "Cafés & tea",
+    "カフェ・茶",
+    "咖啡·茶"
+  ],
+  "미술·전시": [
+    "Art & exhibits",
+    "美術・展示",
+    "艺术·展览"
+  ],
+  "무료 관람": [
+    "Free visits",
+    "無料見学",
+    "免费参观"
+  ],
+  "관심 있는 목적을 골라보세요. 각 목적마다 4가지 비교·8곳을 담았어요.": [
+    "Choose a purpose: each has 4 comparisons and 8 distinct places.",
+    "目的を選ぶと、それぞれ4組・8か所を比較できます。",
+    "选择出游目的，每类有4组对比、8个不同地点。"
+  ],
+  "모든 카테고리": [
+    "All categories",
+    "すべてのカテゴリー",
+    "所有分类"
+  ],
+  "카테고리 접기": [
+    "Show fewer categories",
+    "カテゴリーを閉じる",
+    "收起分类"
+  ],
+  "일반 관람 기준이에요. 유료 체험·상품과 예약 조건은 별도로 확인하세요.": [
+    "Free refers to general visits. Check paid activities, purchases and booking rules separately.",
+    "無料は一般見学が対象。有料体験・商品・予約条件は別途確認。",
+    "免费指一般参观，收费体验、商品及预约规则需另查。"
+  ],
+  "어린이 전용 체험과 일반 동반 방문을 구분했어요. 연령·보호자 조건을 확인하세요.": [
+    "Dedicated children’s activities and general family visits differ. Check age and guardian rules.",
+    "子ども専用体験と一般の同伴見学を区別しています。年齢・保護者条件を確認。",
+    "已区分儿童专属体验与一般亲子参观，请确认年龄和监护人条件。"
+  ],
+  "실내 관람 중심이에요. 입구·건물 사이 이동과 휴관일도 확인하세요.": [
+    "Mainly indoor visits. Check outdoor access routes and closure days too.",
+    "屋内鑑賞が中心。入口・棟間の移動と休館日も確認。",
+    "以室内参观为主，也请确认入口、楼间路线及休馆日。"
+  ],
+  "서로 다른 카테고리에 같은 장소가 포함될 수 있어요.": [
+    "A place may appear in more than one category.",
+    "同じ場所が複数のカテゴリーに含まれる場合があります。",
+    "同一地点可能出现在不同分类中。"
+  ]
+}

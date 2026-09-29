@@ -1,0 +1,950 @@
+{
+  "places": {
+    "onion": [
+      "Onion Anguk",
+      "Coffee · bakery",
+      "Rest with bread and a drink",
+      "Buy bread and drinks separately",
+      "Weekdays 07:00–22:00\nWeekends 09:00–22:00",
+      "",
+      "A café in a hanok, with a wooden veranda and courtyard. Choose it for a break with food and a drink.",
+      "5 Gyedong-gil, Jongno-gu, Seoul",
+      "Weekdays 07:00–22:00; weekends 09:00–22:00. Reconfirm before visiting.",
+      "Café for customers buying bread or drinks; some floor seating on the veranda",
+      "Some veranda seats are on the floor. Seats and queues vary on the day.",
+      "Entrance steps reported · confirm step-free access",
+      "An entrance step is reported. Ask the café about a step-free route if needed.",
+      "Menu prices, available seats, queues and step-free entrance",
+      "Café visitor information",
+      "Wooden veranda and courtyard"
+    ],
+    "jeongdok": [
+      "Jeongdok Library",
+      "Library · garden",
+      "Take a break among books and gardens",
+      "Reading materials · free",
+      "Reading rooms: weekdays 09:00–20:00\nWeekends 09:00–17:00",
+      "Closed 1st & 3rd Wed and public holidays, except Sundays",
+      "A public library for reading quietly or exploring the garden. Please keep quiet in reading rooms.",
+      "48 Bukchon-ro 5-gil, Jongno-gu, Seoul",
+      "Main reading rooms: weekdays 09:00–20:00, weekends 09:00–17:00. Facilities differ. Closed the first and third Wednesday of each month and public holidays, except Sundays.",
+      "Quiet reading rooms; check garden opening hours separately",
+      "Reading rooms and study rooms have different hours. Check seating and membership conditions.",
+      "Hours, closures and access routes vary by facility",
+      "Garden and reading-room access routes differ. Ask the library about step-free access.",
+      "Garden hours, seating rules by facility and step-free routes",
+      "Hours & closures",
+      "Main building and garden"
+    ],
+    "staffpicks": [
+      "Staffpicks",
+      "Café · outdoor space",
+      "Enjoy the view from a terrace",
+      "Buy drinks or desserts",
+      "Check hours and closures with the café",
+      "",
+      "A café on a Seochon hillside. Consider it for a drink at an outdoor table with a view.",
+      "22 Sajik-ro 9-gil, Jongno-gu, Seoul",
+      "Check the café’s latest opening hours and closed days.",
+      "Buy drinks or desserts to use indoor or terrace seating",
+      "Outdoor seating depends on the weather and conditions on the day.",
+      "Hillside location · confirm facilities with the café",
+      "The café is on a slope. Official tourism sources differ on facilities; confirm your required route directly.",
+      "Current hours and prices, outdoor seats and step-free access from the hill",
+      "Café updates",
+      "Exterior and outdoor seating"
+    ],
+    "suseongdong": [
+      "Suseongdong Valley",
+      "Nature · walking",
+      "Walk among rocks and trees",
+      "Free",
+      "Generally open at all times",
+      "Weather and on-site restrictions may limit access",
+      "A walking area at the foot of Inwangsan, with rocks, trees and valley scenery. Choose it when you want to walk a little farther.",
+      "Around 185-3 Ogin-dong, Jongno-gu, Seoul",
+      "Listed as open at all times. Check weather and local access restrictions.",
+      "Outdoor walking area with sloped paths",
+      "Water levels vary with season and rainfall. Take care on wet rocks and paths.",
+      "Sloped outdoor paths · approximate map location",
+      "There are outdoor paths and slopes. Confirm which sections are usable with a wheelchair or stroller.",
+      "Step-free entrances, accessible sections and same-day restrictions",
+      "Walking area information",
+      "Valley and Giringyo bridge · not an entrance photo"
+    ],
+    "craft": [
+      "Seoul Museum of Craft Art",
+      "Museum · craft",
+      "Explore craft across several galleries",
+      "Free · rented exhibitions may differ",
+      "Usually 10:00–18:00",
+      "Closed Mondays · public-holiday exceptions",
+      "A museum of textiles, ceramics and other crafts across several galleries. Choose it to explore works and how they are made.",
+      "4 Yulgok-ro 3-gil, Jongno-gu, Seoul",
+      "Usually 10:00–18:00, last entry 30 minutes before closing. Closed Mondays with public-holiday exceptions, and January 1. The Children’s Museum closes every Monday.",
+      "General exhibitions are self-guided; Children’s Museum advance booking; food restrictions apply",
+      "General galleries allow self-guided visits. Check separate booking guidance for the Children’s Museum.",
+      "Check official guidance for evening opening and reservations",
+      "Visitor information lists accessible parking and facilities. Ask the museum about the assistance you need.",
+      "Fees for rented exhibitions, mobility assistance and step-free entrances",
+      "Visits & reservations",
+      "Indoor connecting space · not the entrance"
+    ],
+    "baeryeom": [
+      "Bae Ryeom House",
+      "Hanok · exhibitions",
+      "Explore a small hanok and its exhibitions",
+      "Check admission and program fees",
+      "Usually 10:00–18:00",
+      "Closed Mondays",
+      "The former hanok home of painter Bae Ryeom now serves as a cultural space. Choose it for the house itself and exhibitions held inside.",
+      "89 Gyedong-gil, Jongno-gu, Seoul",
+      "10:00–18:00; closed Mondays. Check exhibition and program schedules.",
+      "House and exhibitions; programs have separate schedules, bookings and fees",
+      "Check booking and participation conditions for the current exhibition or program.",
+      "Confirm hanok thresholds, routes and program conditions",
+      "Ask the operator about thresholds and routes through the courtyard before visiting.",
+      "General admission, current exhibitions, thresholds and step-free routes",
+      "Exhibitions & participation",
+      "Main house and courtyard"
+    ],
+    "daeo": [
+      "Daeo Bookstore",
+      "Former bookstore · café",
+      "Enjoy old bookstore details and a courtyard",
+      "Buy a drink or admission postcard set",
+      "KTO listing: 12:00–21:00",
+      "Confirm closed days with the venue",
+      "A café and cultural space preserving an old bookstore’s appearance. Consider it for a rest among old objects and a courtyard.",
+      "55 Jahamun-ro 7-gil, Jongno-gu, Seoul",
+      "KTO listing: 12:00–21:00. Reconfirm with the venue before visiting.",
+      "Purchase a drink or a visitor postcard set to use the space",
+      "Visitors who only want to look around are asked to buy a souvenir postcard set. Confirm current prices and conditions.",
+      "Entrance step reported · purchase required",
+      "A step at the main entrance is reported. Ask the venue whether its interior is accessible for you.",
+      "Current prices, closed days and step-free interior access",
+      "Visits & purchase conditions",
+      "Sign and exterior"
+    ],
+    "yisang": [
+      "Yi Sang’s House",
+      "Literature · cultural space",
+      "Explore writer Yi Sang’s life and work",
+      "Check current admission fee",
+      "Previous guidance: 10:00–17:00",
+      "Closed Mondays · check latest notices",
+      "A literary memorial on part of the site where writer Yi Sang lived. Choose it to learn about the writer and his work.",
+      "18 Jahamun-ro 7-gil, Jongno-gu, Seoul",
+      "10:00–17:00; closed Mondays. Check operator notices for temporary closures and updates.",
+      "Small indoor literary memorial; check group visits and events separately",
+      "The viewing space is small. Ask the operator about group visits and event schedules.",
+      "Confirm admission and step-free access · approximate location",
+      "Step-free routes and interior accessibility require advance confirmation.",
+      "Current admission, opening hours and step-free routes",
+      "Operator information",
+      "Sign and exterior"
+    ],
+    "tongin": [
+      "Tongin Market",
+      "Market · lunchbox",
+      "Build a lunchbox from several stalls",
+      "Pay per item · check token purchase rules",
+      "Lunchbox service: usually 11:00–15:00",
+      "Check stall and lunchbox closures separately",
+      "Its token lunchbox lets you choose food from participating stalls. Consider it for small portions of different foods instead of a meal in one restaurant.",
+      "18 Jahamun-ro 15-gil, Jongno-gu, Seoul",
+      "KTO place listing: market 07:00–21:00; lunchbox café 11:00–15:00. Stall hours differ. Sources disagree on weekend lunchbox closing times and Monday/third-Sunday closures; reconfirm with the market.",
+      "Buy tokens → choose food at participating stalls → use the lunchbox café; not every stall accepts tokens",
+      "For a late lunch, check when the lunchbox service ends first. Confirm minimum token spend, refunds and multilingual menu QR information on site.",
+      "Walk through market lanes · lunchbox café is upstairs",
+      "The lunchbox café is upstairs in the customer service center. Ask about dining-area access for wheelchairs or strollers.",
+      "Minimum token purchase, participating stalls and food availability, dietary needs and step-free dining",
+      "Market & lunchbox guide",
+      "Market entrance · not the lunchbox café entrance"
+    ],
+    "tosokchon": [
+      "Tosokchon Samgyetang",
+      "Restaurant · chicken soup",
+      "Sit down for a hot meal in a hanok",
+      "Pay by menu item · check current prices",
+      "Usually 10:00–22:00",
+      "Last order 21:00 · confirm temporary closures",
+      "A hanok restaurant serving samgyetang and other chicken dishes. Compare it with a market lunch when you want to sit down for one meal.",
+      "5 Jahamun-ro 5-gil, Jongno-gu, Seoul",
+      "KTO listing: 10:00–22:00; last order 21:00, open year-round. Confirm same-day operation with the restaurant.",
+      "Order a meal in a hanok restaurant",
+      "Samgyetang includes chicken, ginseng and nuts among its ingredients. Tell the restaurant about allergies or dietary restrictions before ordering. Queue times are not live.",
+      "Ask about seating and step-free entry",
+      "Official tourism pages differ on entrance steps. Confirm the route and seating you need with the restaurant.",
+      "Current prices, queues, ingredient substitutions, step-free entry and seating",
+      "Menu & visitor information",
+      "Samgyetang · reference menu photo"
+    ],
+    "hwangsaengga": [
+      "Hwangsaengga Kalguksu",
+      "Restaurant · noodles",
+      "Eat beef-broth noodles and dumplings",
+      "Pay by menu item · check current prices",
+      "Usually 11:00–21:30",
+      "Ask about last orders and temporary closures",
+      "A restaurant serving beef-broth kalguksu and large dumplings. Consider it for warm soup and noodles instead of bread and coffee.",
+      "78 Bukchon-ro 5-gil, Jongno-gu, Seoul",
+      "KTO listing: 11:00–21:30, open year-round. Ask the restaurant about last orders and temporary closures.",
+      "Order kalguksu, dumplings and other dishes",
+      "Some dishes use beef-bone broth and wheat noodles. Confirm vegetarian options, allergens and possible substitutions before ordering.",
+      "Entrance step reported · confirm your route",
+      "KTO reports an entrance step. Ask the restaurant about step-free entry and seating.",
+      "Menu prices, queues, last orders, dietary accommodation and step-free seating",
+      "Restaurant visitor information",
+      "Kalguksu · reference menu photo"
+    ],
+    "changdeok": [
+      "Changdeokgung Palace",
+      "Palace · history",
+      "Explore several palace halls",
+      "Standard halls ticket ₩3,000 · garden extra",
+      "Opens 09:00\nCloses 17:30–18:30 by season",
+      "Closed Mondays · public-holiday exceptions",
+      "Explore palace halls and royal spaces. Palace-hall visits and Secret Garden visits have different conditions, so choose the area you want to see first.",
+      "99 Yulgok-ro, Jongno-gu, Seoul",
+      "Halls: Feb–May and Sep–Oct 09:00–18:00; Jun–Aug until 18:30; Nov–Jan until 17:30. Last entry one hour before closing. If Monday is a public holiday, closes the next non-holiday. Garden sessions are separate.",
+      "Self-guided palace halls; garden has separate fees, sessions and booking conditions",
+      "The photo shows the Secret Garden, which is not included in a halls-only ticket. Check guided-tour languages, times and discount conditions.",
+      "Outdoor stone paths · check garden slopes and routes",
+      "Outdoor routes include slopes and steps. Ask the palace office about the sections suitable for your mobility needs.",
+      "Garden availability, same-day sessions, mobility support and special visits",
+      "Halls & garden conditions",
+      "Secret Garden scenery · separately ticketed area"
+    ],
+    "unhyeon": [
+      "Unhyeongung",
+      "Royal residence · history",
+      "Explore a royal house and courtyards",
+      "General admission free · activities separate",
+      "Usually 09:00–19:00\nNov–Mar closes 18:00",
+      "Closed Mondays · evening opening separate",
+      "The former private residence of Heungseon Daewongun. Compare its house and courtyards with a wider tour of palace halls.",
+      "464 Samil-daero, Jongno-gu, Seoul",
+      "Basic guidance: Apr–Oct 09:00–19:00; Nov–Mar 09:00–18:00. Last entry 30 minutes before closing. Closed Mondays with public-holiday exceptions. Check separate notices for the autumn 2026 evening-opening pilot.",
+      "General areas are self-guided; cultural activities and ceremonies have separate schedules and conditions",
+      "This is separate from Changdeokgung. Evening access is temporary; confirm the closing time for your day, including Thursday exceptions.",
+      "Courtyard and hanok thresholds · check open areas",
+      "Thresholds and open sections vary between the courtyard and house interiors. Ask the office about your required route.",
+      "Evening opening areas by date, activity fees and availability, step-free routes",
+      "Visits & evening notices",
+      "Royal house and courtyard"
+    ],
+    "gogung": [
+      "National Palace Museum of Korea",
+      "Museum · royal culture",
+      "Explore royal objects indoors",
+      "Free",
+      "Usually 09:30–17:30\nSaturdays until 21:00",
+      "Closed last Monday of each month · exceptions apply",
+      "Explore royal life and culture through objects. Choose indoor exhibitions as an alternative to walking through palace buildings and grounds.",
+      "12 Hyoja-ro, Jongno-gu, Seoul",
+      "Operator: Mon–Fri and Sun 09:30–17:30; Sat and the last Wed of each month until 21:00. Last entry 30 minutes before closing. Closed last Monday monthly, or the day after the holiday if it falls on a holiday; also January 1, Lunar New Year’s Day and Chuseok Day.",
+      "General exhibitions; educational and group programs may require separate applications",
+      "The palace and museum have different fees and closure days. Gyeongbokgung’s Tuesday closure does not mean this museum is closed.",
+      "Indoor exhibitions · check step-free entrances",
+      "The photo shows stairs at the front. Ask the museum about step-free entrances and elevator routes.",
+      "Gallery changes or partial closures, mobility support and group booking rules",
+      "Hours & closures",
+      "Museum front · entrance with stairs"
+    ],
+    "gyeongbok": [
+      "Gyeongbokgung Palace",
+      "Palace · outdoor visit",
+      "Walk through palace buildings and courtyards",
+      "Standard admission ₩3,000 · check exemptions",
+      "Opens 09:00\nCloses 17:00–18:30 by season",
+      "Closed Tuesdays · public-holiday exceptions",
+      "Walk through palace buildings, wide courtyards and pond scenery. Grouped here with the Gyeongbokgung Station area reached from Seochon.",
+      "161 Sajik-ro, Jongno-gu, Seoul",
+      "Nov–Feb 09:00–17:00; Mar–May and Sep–Oct until 18:00; Jun–Aug until 18:30. Last entry one hour before closing. If Tuesday is a public holiday, closes the next non-holiday. Evening and special visits are separate.",
+      "Daytime palace ticket; confirm hanbok, age and other concession conditions",
+      "Expect substantial outdoor walking. Compare with the Palace Museum in rain or heat. Special visits and entry inside Gyeonghoeru have separate conditions.",
+      "Extensive outdoor routes · stone paving and thresholds",
+      "Some sections have stone paving and thresholds. Ask which areas can be visited with a wheelchair or stroller.",
+      "Events and restrictions, special-visit availability and mobility support",
+      "Palace visitor information",
+      "Gyeonghoeru exterior · not an entrance photo"
+    ],
+    "folk": [
+      "National Folk Museum of Korea",
+      "Museum · everyday culture",
+      "Explore Korean daily life and old objects",
+      "Free · separate from palace admission",
+      "Mar–Oct 09:00–18:00\nNov–Feb closes 17:00",
+      "Closed Jan 1, Lunar New Year’s Day, Chuseok Day and announced dates",
+      "Explore everyday objects and ways of life. General galleries, the bookable Children’s Museum and the museum shop have different conditions.",
+      "37 Samcheong-ro, Jongno-gu, Seoul",
+      "Main museum: Mar–Oct 09:00–18:00; Nov–Feb until 17:00. Last entry one hour before closing. Wednesdays Mar–Oct until 20:00. Children’s Museum: booked sessions 09:30–16:50, no evening opening. Check holiday and temporary closures.",
+      "General galleries do not require advance booking; Children’s Museum requires booking and an accompanying guardian",
+      "Look for the museum entrance on Samcheong-ro. Admission is separate from Gyeongbokgung; check available children’s sessions on the booking page.",
+      "Stroller and wheelchair loans listed · confirm stock",
+      "Official guidance lists stroller loans for children up to 24 months and wheelchair loans. Confirm stock, storage and the route you need.",
+      "Children’s sessions and age rules, stroller stock and partial closures",
+      "Main museum & facilities",
+      "Museum exterior · not a children’s gallery photo"
+    ],
+    "mmca": [
+      "MMCA Seoul",
+      "Art museum · contemporary art",
+      "Explore contemporary art indoors",
+      "Fees vary by exhibition · check free-entry eligibility",
+      "Usually 10:00–18:00\nWed & Sat until 21:00",
+      "Closed Jan 1, Lunar New Year’s Day, Chuseok Day and announced dates",
+      "Several galleries present contemporary art. Choose exhibitions and check their fees; browse related books and goods at Art Zone and Art Book.",
+      "30 Samcheong-ro, Jongno-gu, Seoul",
+      "Mon, Tue, Thu, Fri and Sun 10:00–18:00; Wed and Sat 10:00–21:00. Closed January 1, Lunar New Year’s Day and Chuseok Day. December 1 is included in the 2026 temporary-closure notice; check your visit date.",
+      "Tickets depend on the exhibition; Art Zone and Art Book purchases are separate",
+      "Evening gallery hours do not establish shop hours. Check exhibition fees, last entry, foreign-language tours and luggage storage.",
+      "Mostly indoors · moving between buildings may be outdoors",
+      "Choose the entrance for your gallery or activity. Ask about step-free routes and mobility assistance.",
+      "Exhibition fees and closures, shop hours and stock, luggage-storage availability",
+      "Exhibitions & facilities",
+      "Museum exterior · not the current exhibition"
+    ],
+    "workshop": [
+      "Bukchon Traditional Crafts Experience Center",
+      "Traditional craft · making",
+      "Make something in a scheduled craft activity",
+      "Entry free · activities charged separately",
+      "Mar–Oct 10:00–18:00\nNov–Feb closes 17:00",
+      "Closed Lunar New Year’s Day & Chuseok Day · check sessions",
+      "A hanok offering different traditional craft activities by day. Find a suitable activity if you want to make something to take home.",
+      "24-5 Bukchon-ro 12-gil, Jongno-gu, Seoul",
+      "Seoul reservation guidance: Mar–Oct 10:00–18:00; Nov–Feb until 17:00. Closed Lunar New Year’s Day and Chuseok Day. Online sessions at 11:00, 12:00, 13:00 and 14:00. Walk-ins may be possible; availability must be confirmed.",
+      "Entry free; pay for the activity on site; online reservation or on-site registration",
+      "Craft types and fees vary by day. Ask about duration, when the item can be taken home and the language used before booking.",
+      "Hanok thresholds · confirm access to activity seating",
+      "Thresholds and activity-room routes differ. Ask which sessions and seats can accommodate a wheelchair or stroller.",
+      "Materials fees, duration, teaching language, available places, ages and step-free seating",
+      "Activities & booking",
+      "Center courtyard · programs vary by date"
+    ],
+    "bukchoncenter": [
+      "Bukchon Traditional Culture Center",
+      "Hanok · cultural programs",
+      "Find hanok tours and cultural programs",
+      "Check fees and booking per program",
+      "Check facility and program hours",
+      "Monday closure listed · check latest schedule",
+      "Visit a hanok and explore traditional-culture classes and guided programs. Compare learning about hanok life with a hands-on making activity.",
+      "37 Gyedong-gil, Jongno-gu, Seoul",
+      "The Hanok Portal facility list gives weekdays 09:00–18:00 and weekends 10:00–17:00. A separate 2026 table gives weekends 09:00–17:00 and Monday closure. Confirm the latest opening times and program sessions.",
+      "Visit the hanok; classes, tours and cultural events each have their own application rules",
+      "Listed programs do not run daily. Check whether your dates offer a one-off visitor activity or a longer course.",
+      "Hanok entrances and thresholds · check the program location",
+      "Rooms and routes vary by program. Ask the center if you need step-free participation.",
+      "Same-day hours, short visitor programs, language, fees and step-free access",
+      "Program schedule",
+      "Center entrance · signs show past events"
+    ],
+    "chebu": [
+      "Chebudong Janchijip Dwaejigalbi",
+      "Restaurant · grilled pork",
+      "Share grilled marinated ribs",
+      "Pay by dish · check minimum order",
+      "Listed opening 10:00 · confirm closing",
+      "Confirm closures and last orders",
+      "A marinated-rib restaurant on Sejong Village Food Street. Compare a shared grill meal with a bowl of buckwheat noodles.",
+      "24 Jahamun-ro 1-gil, Jongno-gu, Seoul",
+      "Listed opening 10:00 · confirm closing. Confirm closures and last orders.",
+      "Order and pay by dish",
+      "Check the address: a similarly named noodle restaurant is different. Tourism listings disagree on closing times; call for late visits.",
+      "Ask about seating and entrance steps",
+      "Ask the restaurant about wheelchair, stroller and restroom access.",
+      "Same-day queues, prices, ingredients, dietary accommodation, breaks and step-free seating",
+      "Menu & opening information",
+      "Restaurant exterior and sign"
+    ],
+    "jalppajin": [
+      "Jalppajin Memil Seochon",
+      "Restaurant · buckwheat noodles",
+      "Eat buckwheat noodles and sliced pork",
+      "Pay by dish · confirm current prices",
+      "Mon–Sat 11:00–21:30 · Sun until 21:00",
+      "Confirm breaks and last orders",
+      "The Seochon main branch serves buckwheat noodles and sliced pork, with seasoned or broth-based noodle options.",
+      "41-1 Jahamun-ro, Jongno-gu, Seoul",
+      "Mon–Sat 11:00–21:30 · Sun until 21:00. Confirm breaks and last orders.",
+      "Order and pay by dish",
+      "The KTO Korean and English addresses differ. Confirm the Seochon entrance with the shop. Buckwheat noodles do not establish vegetarian or allergen-free broth and sauces.",
+      "Ask about seating and entrance steps",
+      "Ask the restaurant about wheelchair, stroller and restroom access.",
+      "Same-day queues, prices, ingredients, dietary accommodation, breaks and step-free seating",
+      "Menu & opening information",
+      "Listed exterior · confirm current entrance"
+    ],
+    "gippen": [
+      "GIPPEN",
+      "Restaurant · soup & charcoal grill",
+      "Choose thistle soup or charcoal dishes",
+      "Pay by dish · check the current menu",
+      "Listed hours 11:30–22:00",
+      "Check breaks and reservations",
+      "A soup and charcoal-grill restaurant south of Anguk Station. Seoul Tourism lists English menus and vegan options; confirm the available dishes before ordering.",
+      "6 Insadong 16-gil, Jongno-gu, Seoul",
+      "Listed hours 11:30–22:00. Check breaks and reservations.",
+      "Order and pay by dish",
+      "This is south of Anguk Station. Confirm allergens, cross-contact handling and reservations separately from vegan menu availability.",
+      "Ask about seating and entrance steps",
+      "Ask the restaurant about wheelchair, stroller and restroom access.",
+      "Same-day queues, prices, ingredients, dietary accommodation, breaks and step-free seating",
+      "Menu & opening information",
+      "Reference dish photo · confirm menu"
+    ],
+    "sujebi": [
+      "Samcheong-dong Sujebi",
+      "Restaurant · hand-torn dough soup",
+      "Eat dough soup and potato pancakes",
+      "Pay by dish · confirm prices",
+      "Opens 11:00 · confirm closing",
+      "Confirm temporary closures and last orders",
+      "A dough-soup restaurant farther north on Samcheong-ro. Check its location before choosing between dough soup and rice soup near Anguk Station.",
+      "101-1 Samcheong-ro, Jongno-gu, Seoul",
+      "Opens 11:00 · confirm closing. Confirm temporary closures and last orders.",
+      "Order and pay by dish",
+      "Seoul Tourism lists closing at 20:00, another tourism listing at 21:00. Confirm late visits and ingredients such as wheat or shellfish.",
+      "Ask about seating and entrance steps",
+      "Ask the restaurant about wheelchair, stroller and restroom access.",
+      "Same-day queues, prices, ingredients, dietary accommodation, breaks and step-free seating",
+      "Menu & opening information",
+      "Restaurant exterior"
+    ],
+    "london": [
+      "London Bagel Museum Anguk",
+      "Bakery · bagels",
+      "Choose bagels to eat or take away",
+      "Bagels and drinks priced separately",
+      "Usually 08:00–18:00",
+      "Check queue registration, stock and cutoff",
+      "A bagel specialist in Anguk. Decide whether your priority is a particular baked item or spending time over tea.",
+      "20 Bukchon-ro 4-gil, Jongno-gu, Seoul",
+      "Usually 08:00–18:00. Check queue registration, stock and cutoff.",
+      "Order drinks or sweets; check seating rules",
+      "Check current waitlist and takeaway rules. This app does not show live queue numbers or stock.",
+      "Check floor/table seating and entrance steps",
+      "Seating and floor access differ. Ask about the seat and step-free route you need.",
+      "Current prices, seats, queues, caffeine, allergens, step-free access and stock",
+      "Café visitor information",
+      "Bagel display · not live stock"
+    ],
+    "osulloc": [
+      "Osulloc Tea House Bukchon",
+      "Tea house · tea & sweets",
+      "Enjoy tea and tea-based sweets",
+      "Drinks, sweets and products priced separately",
+      "Listed hours 11:00–20:00",
+      "Check hours by floor and last orders",
+      "A Bukchon-ro tea house with drinks, sweets and tea products. Café orders and gifts have separate costs.",
+      "45 Bukchon-ro, Jongno-gu, Seoul",
+      "Listed hours 11:00–20:00. Check hours by floor and last orders.",
+      "Order drinks or sweets; check seating rules",
+      "Tea courses may differ from ordinary drink orders. Check bookings, caffeine, gift packaging and stock.",
+      "Check floor/table seating and entrance steps",
+      "Seating and floor access differ. Ask about the seat and step-free route you need.",
+      "Current prices, seats, queues, caffeine, allergens, step-free access and stock",
+      "Café visitor information",
+      "Tea-house exterior"
+    ],
+    "chatteul": [
+      "Chamasineun Tteul",
+      "Tea house · hanok & traditional tea",
+      "Have traditional tea and sweets in a hanok",
+      "Tea and sweets priced separately",
+      "10:00–19:00 · listed last order 18:10",
+      "Closed Tuesdays · check holidays",
+      "A hanok tea house with low-table seating and traditional tea. Consider whether floor seating suits you or you need a chair.",
+      "26 Bukchon-ro 11na-gil, Jongno-gu, Seoul",
+      "10:00–19:00 · listed last order 18:10. Closed Tuesdays · check holidays.",
+      "Order drinks or sweets; check seating rules",
+      "Check residential-lane visiting restrictions and signs first. Shop hours do not establish when tourists may enter nearby lanes.",
+      "Check floor/table seating and entrance steps",
+      "Seating and floor access differ. Ask about the seat and step-free route you need.",
+      "Current prices, seats, queues, caffeine, allergens, step-free access and stock",
+      "Café visitor information",
+      "Hanok entrance · evening reference photo"
+    ],
+    "fritz": [
+      "Fritz Coffee Wonseo",
+      "Café · coffee & bread",
+      "Have coffee and bread in Wonseo-dong",
+      "Drinks, bread and products priced separately",
+      "Tourism listing 10:00–21:00 · confirm with café",
+      "Confirm closures and last orders",
+      "Order coffee and bread at the Wonseo branch beside Arario Museum. Museum admission and café use are separate.",
+      "83 Yulgok-ro, Jongno-gu, Seoul",
+      "Tourism listing 10:00–21:00 · confirm with café. Confirm closures and last orders.",
+      "Order drinks or sweets; check seating rules",
+      "Select Wonseo on the official store page. Confirm beans and drip-bag stock at this branch; museum hours do not establish café hours.",
+      "Check floor/table seating and entrance steps",
+      "Seating and floor access differ. Ask about the seat and step-free route you need.",
+      "Current prices, seats, queues, caffeine, allergens, step-free access and stock",
+      "Café visitor information",
+      "Hanok-space exterior"
+    ],
+    "teatherapy": [
+      "Tea Therapy",
+      "Tea house · blended tea",
+      "Choose herbal or fruit tea by taste",
+      "Tea and products charged · check activities separately",
+      "Mon–Sat 10:00–21:00 · Sun until 20:00",
+      "Check seasonal changes and activity dates",
+      "A Yunboseon-gil tea house offering herbal and fruit teas and tea products. Choose by flavour; ask separately about one-day tea programs.",
+      "74 Yunboseon-gil, Jongno-gu, Seoul",
+      "Mon–Sat 10:00–21:00 · Sun until 20:00. Check seasonal changes and activity dates.",
+      "Order drinks or sweets; check seating rules",
+      "Ask about tea classes, foot-bath availability, fees and reservations. This app does not assess or guarantee health effects of tea.",
+      "Check floor/table seating and entrance steps",
+      "Seating and floor access differ. Ask about the seat and step-free route you need.",
+      "Current prices, seats, queues, caffeine, allergens, step-free access and stock",
+      "Café visitor information",
+      "Tea-house exterior"
+    ],
+    "park": [
+      "Park No-soo Museum",
+      "Art museum · artist home",
+      "Explore an artist home and Korean painting",
+      "Listed adult admission ₩3,000 · check concessions",
+      "Usually 10:00–18:00",
+      "Closed Mondays, Jan 1, Seollal and Chuseok",
+      "An art museum in painter Park No-soo’s former home, with works and a garden. Compare an artist-house visit with a multi-floor temporary exhibition.",
+      "34 Ogin 1-gil, Jongno-gu, Seoul",
+      "Usually 10:00–18:00. Closed Mondays, Jan 1, Seollal and Chuseok.",
+      "Check exhibition dates, tickets and last entry",
+      "The exterior photo shows steps. Confirm interior access, garden use and exhibition-change closures.",
+      "Check stairs and lift access by gallery",
+      "Routes depend on the gallery and building. Ask the operator about steps and mobility assistance.",
+      "Current exhibition, admission, closures, photo rules, age limits and step-free routes",
+      "Exhibitions & visiting",
+      "Artist-home exterior · stepped approach"
+    ],
+    "daelim": [
+      "Daelim Museum",
+      "Art museum · temporary exhibitions",
+      "Choose a photography or design exhibition",
+      "Fees and booking depend on exhibition",
+      "Check current exhibition hours",
+      "Check Monday and exhibition-change closures",
+      "A museum in Tongui-dong focused on temporary exhibitions. Themes, admission and hours can change, so start with the current exhibition.",
+      "21 Jahamun-ro 4-gil, Jongno-gu, Seoul",
+      "Check current exhibition hours. Check Monday and exhibition-change closures.",
+      "Check exhibition dates, tickets and last entry",
+      "This is not D Museum in Seoul Forest. Use current Daelim exhibition ticket rules rather than older tourism prices.",
+      "Check stairs and lift access by gallery",
+      "Routes depend on the gallery and building. Ask the operator about steps and mobility assistance.",
+      "Current exhibition, admission, closures, photo rules, age limits and step-free routes",
+      "Exhibitions & visiting",
+      "Museum exterior · not the current exhibition"
+    ],
+    "hakgojae": [
+      "Hakgojae Gallery",
+      "Gallery · contemporary art",
+      "See art in hanok and modern galleries",
+      "General exhibitions listed free · check current show",
+      "Usually 10:00–18:00",
+      "Listed closed Sun & Mon · check changeovers",
+      "A Samcheong-ro gallery with hanok and contemporary spaces. Compare one gallery show with the multiple exhibitions of a large museum.",
+      "50 Samcheong-ro, Jongno-gu, Seoul",
+      "Usually 10:00–18:00. Listed closed Sun & Mon · check changeovers.",
+      "Check exhibition dates, tickets and last entry",
+      "Galleries may close between shows. Check photography, large-bag and group-visit rules.",
+      "Check stairs and lift access by gallery",
+      "Routes depend on the gallery and building. Ask the operator about steps and mobility assistance.",
+      "Current exhibition, admission, closures, photo rules, age limits and step-free routes",
+      "Exhibitions & visiting",
+      "Hanok-gallery exterior"
+    ],
+    "boan": [
+      "Boan1942",
+      "Art space · former inn",
+      "Explore a former inn and its exhibitions",
+      "Check each exhibition · books and drinks extra",
+      "Galleries usually Tue–Sun 12:00–18:00",
+      "Closed Mondays · hours vary by space",
+      "A cultural space with exhibitions and a bookshop around the former Boan Inn. Explore both the artwork and traces of the old building.",
+      "33 Hyoja-ro, Jongno-gu, Seoul",
+      "Galleries usually Tue–Sun 12:00–18:00. Closed Mondays · hours vary by space.",
+      "Check exhibition dates, tickets and last entry",
+      "Gallery, bookshop, café and lodging have different rules. Check stairs, gaps between exhibitions and open areas.",
+      "Check stairs and lift access by gallery",
+      "Routes depend on the gallery and building. Ask the operator about steps and mobility assistance.",
+      "Current exhibition, admission, closures, photo rules, age limits and step-free routes",
+      "Exhibitions & visiting",
+      "Interior with a past exhibition · not current"
+    ],
+    "baekinje": [
+      "Baek In-je House",
+      "Hanok · modern-era home",
+      "Explore a large hanok and courtyard",
+      "General admission free · book interior tours",
+      "09:00–18:00 · last entry 17:30",
+      "Listed closed Mondays and Jan 1",
+      "A historic house for exploring modern-era hanok architecture and its garden. General visits focus on outdoor open areas; some interiors require a guided-tour booking.",
+      "16 Bukchon-ro 7-gil, Jongno-gu, Seoul",
+      "09:00–18:00 · last entry 17:30. Listed closed Mondays and Jan 1.",
+      "Visit open areas; tours and activities have separate rules",
+      "Not all interiors are open without booking. Check desired areas, tour language, timing and child-accompaniment rules.",
+      "Check hanok thresholds, courtyards and open areas",
+      "Indoor and courtyard thresholds differ. Ask which areas accommodate strollers or wheelchairs.",
+      "Open areas, tour availability, activity fees, languages and step-free routes",
+      "Visits & programs",
+      "House entrance · stepped approach"
+    ],
+    "sangchon": [
+      "Sangchonjae",
+      "Hanok · ondol culture",
+      "Discover hanok and floor-heating design",
+      "General admission free · programs separate",
+      "Usually 09:00–18:00",
+      "Check Monday, Jan 1, Seollal and Chuseok closures",
+      "A Seochon hanok cultural space introducing ondol heating and traditional life. Seasonal events and classes are not daily; check the schedule separately.",
+      "12-11 Jahamun-ro 17-gil, Jongno-gu, Seoul",
+      "Usually 09:00–18:00. Check Monday, Jan 1, Seollal and Chuseok closures.",
+      "Visit open areas; tours and activities have separate rules",
+      "Free admission does not make all activities free. Check registration, materials fees, language and courtyard access.",
+      "Check hanok thresholds, courtyards and open areas",
+      "Indoor and courtyard thresholds differ. Ask which areas accommodate strollers or wheelchairs.",
+      "Open areas, tour availability, activity fees, languages and step-free routes",
+      "Visits & programs",
+      "Hanok cultural-space reference photo"
+    ],
+    "sajik": [
+      "Sajik Park Seoul",
+      "Park · outdoor walk",
+      "Take a gentle park walk",
+      "Park walks free · facility rules separate",
+      "Park listed open 24 hours",
+      "Altar/interior access and event restrictions separate",
+      "Park areas around Sajik Altar. Compare a park stroll with walking farther up to a valley; this does not imply unrestricted altar access.",
+      "89 Sajik-ro, Jongno-gu, Seoul",
+      "Park listed open 24 hours. Altar/interior access and event restrictions separate.",
+      "Walk in open park areas; heritage interiors are separate",
+      "With children, distinguish heritage areas from walking paths. Choose an indoor comparison in rain or heat.",
+      "Check outdoor slopes, paths and restrictions",
+      "Slopes, steps and open paths vary. Follow notices for rain, works or events.",
+      "Same-day restrictions, events, restroom access and step-free paths",
+      "Park visitor information",
+      "Sajik Altar view · access is not guaranteed"
+    ],
+    "donglim": [
+      "Donglim Knot Workshop",
+      "Workshop · Korean knots",
+      "See and make decorative knots",
+      "Activities and works charged · confirm fees",
+      "Usually 10:00–18:00",
+      "Listed closed Mondays and major holidays",
+      "A hanok workshop displaying traditional knots and offering bracelet or ornament making. Activities and material costs depend on the piece.",
+      "10 Bukchon-ro 12-gil, Jongno-gu, Seoul",
+      "Usually 10:00–18:00. Listed closed Mondays and major holidays.",
+      "Visit open areas; tours and activities have separate rules",
+      "Ask about booking times, duration, teaching language and minimum age. Distinguish viewing the display from joining a workshop.",
+      "Check hanok thresholds, courtyards and open areas",
+      "Indoor and courtyard thresholds differ. Ask which areas accommodate strollers or wheelchairs.",
+      "Open areas, tour availability, activity fees, languages and step-free routes",
+      "Visits & programs",
+      "Hanok knot-workshop exterior"
+    ]
+  },
+  "mapNames": {
+    "craft": "Craft Art Museum",
+    "folk": "Folk Museum",
+    "gogung": "Palace Museum",
+    "workshop": "Crafts Center",
+    "bukchoncenter": "Bukchon Culture Center",
+    "changdeok": "Changdeokgung",
+    "gyeongbok": "Gyeongbokgung"
+  },
+  "notices": {
+    "craft": {
+      "text": "Some galleries have evening opening until November 30. Check the visitor guide for hours by day."
+    },
+    "unhyeon": {
+      "text": "Expanded evening-opening pilot until November 29. The website lists Thursday closing at 18:00 and other opening days at 21:00. Check the notice for your date.",
+      "expiredText": "The autumn evening-opening pilot period has ended. Check the latest visiting hours."
+    },
+    "folk": {
+      "text": "Permanent Exhibition Hall 1 is scheduled to close September 30–December 21. Check other galleries and the Children’s Museum separately.",
+      "expiredText": "The announced closure period for Hall 1 has passed. Check official notices to confirm reopening."
+    }
+  },
+  "pairs": {
+    "jeongdok": {
+      "shortTitle": "Take a break",
+      "title": "When you need a short break",
+      "reason": "Rest over food and drink, or among books and gardens?"
+    },
+    "suseongdong": {
+      "shortTitle": "Outdoor scenery",
+      "title": "When you want an outdoor view",
+      "reason": "Sit on a terrace or take a walk through nature?"
+    },
+    "baeryeom": {
+      "shortTitle": "Craft exhibitions",
+      "title": "When you want to see an exhibition",
+      "reason": "Compare several craft galleries with a small hanok exhibition space."
+    },
+    "yisang": {
+      "shortTitle": "Alley stories",
+      "title": "Curious about the neighborhood’s past?",
+      "reason": "Compare an old bookstore’s everyday objects with a writer’s story."
+    },
+    "seochon-meal": {
+      "shortTitle": "A meal in Seochon",
+      "title": "Pick from market stalls or sit down for a meal?",
+      "reason": "Compare a build-your-own lunchbox with chicken soup in a hanok restaurant.",
+      "notice": "The lunchbox café closes earlier than the market. Check its closing time before a late meal."
+    },
+    "anguk-meal": {
+      "shortTitle": "A meal in Anguk",
+      "title": "Bread and coffee, or a warm bowl of noodles?",
+      "reason": "Choose a light bakery meal or noodles in a restaurant.",
+      "choices": {
+        "onion": {
+          "visitWhen": "Have a light meal of bread and a drink"
+        }
+      }
+    },
+    "royal-anguk": {
+      "shortTitle": "Royal spaces",
+      "title": "A palace to explore or a royal house to visit?",
+      "reason": "Compare Changdeokgung’s halls with Unhyeongung’s house and courtyards.",
+      "notice": "Both normally close on Mondays. Changdeokgung’s garden is a separate visit from its halls."
+    },
+    "royal-seochon": {
+      "shortTitle": "Royal culture",
+      "title": "Walk through a palace or explore royal objects?",
+      "reason": "Choose outdoor palace grounds or an indoor museum near Gyeongbokgung Station.",
+      "notice": "Gyeongbokgung normally closes Tuesdays; the Palace Museum closes the last Monday of each month. Check holiday exceptions."
+    },
+    "hands-on": {
+      "shortTitle": "Traditional culture",
+      "title": "Make a craft or learn about hanok life?",
+      "reason": "Compare scheduled craft-making with hanok tours and cultural programs.",
+      "notice": "An open building does not guarantee your preferred program is running. Check dates, fees and teaching language first."
+    },
+    "family-museum": {
+      "shortTitle": "Children’s museums",
+      "title": "Looking for an activity with children?",
+      "reason": "Compare a craft-focused children’s museum with one about everyday culture.",
+      "notice": "Both Children’s Museums require advance booking. Check ages, guardian numbers and available sessions.",
+      "choices": {
+        "craft": {
+          "visitWhen": "Explore crafts at the Children’s Museum",
+          "cost": "Children’s Museum free · advance booking",
+          "schedule": "Use your booked session",
+          "closure": "Closed every Monday",
+          "checkLabel": "Children’s Museum booking",
+          "accessSummary": "Check session, ages and guardian numbers",
+          "useMode": "Advance booking for the Children’s Museum; ages and guardian numbers vary by program",
+          "visitTip": "General-gallery evening opening is separate from children’s sessions. Check your booked date, session and entry deadline."
+        },
+        "folk": {
+          "visitWhen": "Explore everyday culture at the Children’s Museum",
+          "cost": "Children’s Museum free · advance booking",
+          "schedule": "Booked sessions within 09:30–16:50",
+          "closure": "No evening opening · check closed days",
+          "checkLabel": "Children’s Museum booking",
+          "accessSummary": "Book in advance and visit with a guardian",
+          "useMode": "Children’s Museum requires advance booking and a guardian; rules differ from general galleries"
+        }
+      }
+    },
+    "rainy-day": {
+      "shortTitle": "Indoor exhibitions",
+      "title": "When it rains or gets too hot",
+      "reason": "Choose indoor craft or contemporary-art exhibitions.",
+      "notice": "Exhibitions are mainly indoors, but moving between buildings may take you outside. Check gallery changes and closures."
+    },
+    "souvenirs": {
+      "shortTitle": "Travel gifts",
+      "title": "Choose a small reminder of your trip",
+      "reason": "Compare traditional-culture goods with contemporary-art goods and books.",
+      "notice": "Photos show museum exteriors. Admission and product prices are separate; ask shops about stock, prices and wrapping.",
+      "choices": {
+        "folk": {
+          "visitWhen": "Browse traditional-culture goods at the museum shop",
+          "cost": "Pay per product",
+          "schedule": "Check shop hours separately",
+          "closure": "Find the shop in the museum guide",
+          "checkLabel": "Museum shop information",
+          "useMode": "Pay per product at the museum shop; admission is separate from product prices",
+          "accessSummary": "Ask about shop access, stock and wrapping"
+        },
+        "mmca": {
+          "visitWhen": "Browse art goods and books at Art Zone and Art Book",
+          "cost": "Pay per product",
+          "schedule": "Check shop hours separately",
+          "closure": "Shop hours differ from evening gallery hours",
+          "checkLabel": "Art Zone & Art Book",
+          "useMode": "Pay per product at Art Zone or Art Book; separate from exhibition tickets",
+          "accessSummary": "Confirm shop entrance, hours and stock before visiting"
+        }
+      }
+    },
+    "soup-choice": {
+      "title": "Dough soup or rice soup?",
+      "reason": "Compare sujebi on Samcheong-ro with rice soup and charcoal dishes south of Anguk Station.",
+      "notice": "These places are on different sides of the Anguk area. Check the map before choosing.",
+      "shortTitle": "Dough soup or rice soup?"
+    },
+    "seochon-noodle-grill": {
+      "title": "Shared ribs or buckwheat noodles?",
+      "reason": "Compare tabletop grilled meat with noodles and sliced pork.",
+      "notice": "Check menus, minimum orders and breaks; buckwheat noodles do not establish dietary suitability.",
+      "shortTitle": "Shared ribs or buckwheat noodles?"
+    },
+    "bagel-tea": {
+      "title": "Pick a bagel or settle in for tea",
+      "reason": "Compare a bagel stop with traditional tea in a hanok.",
+      "notice": "The tea house is in residential lanes. Check visitor restrictions separately from shop hours.",
+      "shortTitle": "Pick a bagel or settle in for tea"
+    },
+    "coffee-tea-hanok": {
+      "title": "Bread and coffee, tea and sweets",
+      "reason": "Compare Onion bread and coffee with Osulloc tea menus.",
+      "shortTitle": "Bread and coffee, tea and sweets"
+    },
+    "roasted-blended": {
+      "title": "Roasted coffee or blended tea",
+      "reason": "Choose coffee and bread in Wonseo-dong or herbal and fruit tea on Yunboseon-gil.",
+      "shortTitle": "Roasted coffee or blended tea"
+    },
+    "seochon-cafe": {
+      "title": "Terrace café or old-bookshop café",
+      "reason": "Compare outdoor seating with a space retaining old books and a courtyard.",
+      "notice": "Both have purchase and seating conditions. Daeo is not a public library.",
+      "shortTitle": "Terrace café or old-bookshop café"
+    },
+    "hanok-courtyards": {
+      "title": "A small hanok or a larger house courtyard",
+      "reason": "Compare Baeryeom’s small house with Baek In-je House’s garden and architecture.",
+      "notice": "These are visitor sites. Follow rules on picnics, extended seating and interior access.",
+      "shortTitle": "A small hanok or a larger house courtyard"
+    },
+    "park-hanok": {
+      "title": "Park paths or a hanok visit",
+      "reason": "Compare a Sajik Park walk with Sangchonjae’s courtyard and ondol displays.",
+      "shortTitle": "Park paths or a hanok visit"
+    },
+    "hanok-life": {
+      "title": "Historic home life or Bukchon hanok culture",
+      "reason": "Compare Baek In-je House architecture with the hanok and cultural information at Bukchon Culture Center.",
+      "notice": "Check house-tour bookings and culture-center program dates separately.",
+      "shortTitle": "Historic home life or Bukchon hanok culture"
+    },
+    "museum-gallery": {
+      "title": "A large museum or a focused gallery visit",
+      "reason": "Compare MMCA’s multiple exhibitions with Hakgojae’s current show.",
+      "shortTitle": "A large museum or a focused gallery visit"
+    },
+    "artist-writer": {
+      "title": "A painter’s work or a writer’s records",
+      "reason": "Compare paintings at Park No-soo Museum with literary displays at Yi Sang’s House.",
+      "shortTitle": "A painter’s work or a writer’s records"
+    },
+    "seochon-art": {
+      "title": "Temporary-show museum or former-inn art space",
+      "reason": "Compare Daelim’s temporary exhibitions with Boan1942’s building and shows.",
+      "notice": "There may be no exhibition between shows. Check current dates and fees first.",
+      "shortTitle": "Temporary-show museum or former-inn art space"
+    },
+    "knot-tea": {
+      "title": "A knot to keep or a tea to remember?",
+      "reason": "Compare traditional knot making with tea selection and tea programs.",
+      "notice": "Walk-in workshops are not guaranteed. Confirm booking, fees, language and when items can be taken home.",
+      "shortTitle": "A knot to keep or a tea to remember?",
+      "choices": {
+        "teatherapy": {
+          "visitWhen": "Choose tea or join a booked tea program",
+          "useMode": "Buy tea products; classes require separate booking and fee checks"
+        }
+      }
+    },
+    "tea-coffee-gifts": {
+      "title": "Tea gifts or coffee gifts",
+      "reason": "Compare tea products with beans and drip bags. Café menus and gift prices differ.",
+      "notice": "Confirm branch stock, packaging and your destination’s import rules.",
+      "shortTitle": "Tea gifts or coffee gifts",
+      "choices": {
+        "osulloc": {
+          "visitWhen": "Choose packaged tea products",
+          "cost": "Gifts priced per product · confirm stock",
+          "useMode": "Buy products; confirm branch stock and packaging"
+        },
+        "fritz": {
+          "visitWhen": "Choose beans and drip-bag gifts",
+          "cost": "Gifts priced per product · confirm stock",
+          "useMode": "Buy products; confirm branch stock and packaging"
+        }
+      }
+    },
+    "rain-royal-art": {
+      "title": "Rain in Seochon: royal objects or an art show",
+      "reason": "Compare indoor royal exhibits with Daelim’s temporary show.",
+      "shortTitle": "Rain in Seochon: royal objects or an art show"
+    },
+    "rain-reading-culture": {
+      "title": "Everyday-culture exhibits or a quiet reading room",
+      "reason": "Compare the Folk Museum’s general galleries with reading at Jeongdok Library.",
+      "notice": "Library use must be quiet; seats are not guaranteed and access to buildings is outdoors.",
+      "shortTitle": "Everyday-culture exhibits or a quiet reading room"
+    },
+    "rain-artist-spaces": {
+      "title": "Small art spaces on a rainy day",
+      "reason": "Compare indoor exhibitions at Park No-soo Museum and Boan1942.",
+      "notice": "Entrances, gardens or between-building routes may be exposed. Check wet steps and exhibition opening.",
+      "shortTitle": "Small art spaces on a rainy day"
+    },
+    "family-royal": {
+      "title": "Walk a palace or see royal objects",
+      "reason": "Match your child’s interests: outdoor palace architecture or indoor royal objects.",
+      "notice": "This does not include booked children’s activities. Check stroller routes, concessions and education schedules.",
+      "shortTitle": "Walk a palace or see royal objects"
+    },
+    "family-break": {
+      "title": "The next family break: a snack or a walk?",
+      "reason": "Compare choosing market food with a park walk.",
+      "notice": "Watch for narrow lanes, hot food and slopes. Ask about stroller access to the lunchbox dining area.",
+      "shortTitle": "The next family break: a snack or a walk?"
+    },
+    "family-hanok": {
+      "title": "Make something or discover a hanok?",
+      "reason": "Compare a craft activity with a house and garden visit.",
+      "notice": "Check age, tools and guardian rules for each activity. Some Baek In-je interiors require a guided-tour booking.",
+      "shortTitle": "Make something or discover a hanok?"
+    },
+    "free-craft-house": {
+      "title": "Free craft exhibits or a hanok visit",
+      "reason": "Compare general craft galleries with Baek In-je House’s public areas.",
+      "notice": "Free visits can still have closures or booking rules. Check children’s galleries, programs and purchases separately.",
+      "shortTitle": "Free craft exhibits or a hanok visit"
+    },
+    "free-life-hanok": {
+      "title": "Everyday culture or a Bukchon hanok",
+      "reason": "Compare Folk Museum general exhibits with Bukchon Culture Center’s public space.",
+      "notice": "Children’s bookings and paid or bookable programs are separate from free general admission.",
+      "shortTitle": "Everyday culture or a Bukchon hanok",
+      "choices": {
+        "bukchoncenter": {
+          "cost": "Public areas free · programs separate",
+          "useMode": "Visit public hanok areas; classes and activities require separate applications"
+        }
+      }
+    },
+    "free-royal-ondol": {
+      "title": "Royal objects or hanok floor heating",
+      "reason": "Compare royal life with hanok living through free general exhibitions.",
+      "shortTitle": "Royal objects or hanok floor heating"
+    },
+    "free-outdoor": {
+      "title": "A free park or valley walk",
+      "reason": "Compare Sajik Park paths with Suseongdong Valley’s rocks and foothill scenery.",
+      "notice": "Free does not mean flat or always open. Check weather and local restrictions.",
+      "shortTitle": "A free park or valley walk"
+    }
+  }
+}

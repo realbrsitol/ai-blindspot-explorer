@@ -1,0 +1,284 @@
+[
+  {
+    "id": "chebu",
+    "source": "https://french.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=60424",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/17/2655217_image2_1.jpg\" />",
+      "\"latitude\":\"37.5765455686434\",",
+      "\"longitude\":\"126.971052442422\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "jalppajin",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=60129",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/32/3109932_image2_1.jpg\" />",
+      "\"latitude\":\"37.5797840630322\",",
+      "\"longitude\":\"126.971077347576\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "gippen",
+    "source": "https://english.visitseoul.net/restaurants/GIPPEN/ENPl3xyt0",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=81910&amp;fileTy=MEDIA&amp;fileNo=1\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=81910&amp;fileTy=MEDIA&amp;fileNo=1\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var mediaInfo = '/comm/getImage?srvcId=MEDIA&amp;parentSn=81910&amp;fileTy=MEDIA&amp;fileNo=1';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=MEDIA&amp;parentSn=81910&amp;fileTy=MEDIA&amp;fileNo=1',",
+      "'/comm/getImage?srvcId=MEDIA&amp;parentSn=81910&amp;fileTy=MEDIA&amp;fileNo=1',",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=81911&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"GIPPEN_Detail_01\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=81912&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"GIPPEN_Detail_02\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=81913&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"GIPPEN_Detail_03\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=81914&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"GIPPEN_Detail_04\">",
+      "markerCurrent = new L.Marker(new L.LatLng(latCurrent,lngCurrent), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat,lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat, lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "//marker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "findMarker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})});",
+      "// \t\t\tlatCurrent = position.coords.latitude;",
+      "// \t\t\tlngCurrent = position.coords.longitude;",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=13463&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=63077&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=67127&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=60389&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=12482&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=60314&fileTy=MEDIA&fileNo=1&thumbTy=M')\">"
+    ]
+  },
+  {
+    "id": "sujebi",
+    "source": "https://english.visitseoul.net/area/Samcheong-dongSujebi/ENPqgbap0",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=67778&amp;fileTy=MEDIA&amp;fileNo=1\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=67778&amp;fileTy=MEDIA&amp;fileNo=1\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var mediaInfo = '/comm/getImage?srvcId=MEDIA&amp;parentSn=67778&amp;fileTy=MEDIA&amp;fileNo=1';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=MEDIA&amp;parentSn=67778&amp;fileTy=MEDIA&amp;fileNo=1',",
+      "'/comm/getImage?srvcId=MEDIA&amp;parentSn=67778&amp;fileTy=MEDIA&amp;fileNo=1',",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=67778&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Samcheong-dong Sujebi_1\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=67779&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Samcheong-dong Sujebi_2\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=67780&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Samcheong-dong Sujebi_3\">",
+      "markerCurrent = new L.Marker(new L.LatLng(latCurrent,lngCurrent), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat,lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat, lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "//marker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "findMarker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})});",
+      "// \t\t\tlatCurrent = position.coords.latitude;",
+      "// \t\t\tlngCurrent = position.coords.longitude;",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=2124&amp;fileTy=POSTTHUMB&amp;fileNo=2&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=12464&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=12898&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=37048&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=73210&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=3277&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">"
+    ]
+  },
+  {
+    "id": "london",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=191147",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/04/2809104_image2_1.jpg\" />",
+      "\"latitude\":\"37.5791705224607\",",
+      "\"longitude\":\"126.986200889348\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "osulloc",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=1573739",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/65/4043065_image2_1.png\" />",
+      "\"latitude\":\"37.5809985877276\",",
+      "\"longitude\":\"126.984600900483\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "chatteul",
+    "source": "https://english.visitseoul.net/PalaceArea/Cha-teul/ENP139gfg",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=78470&amp;fileTy=MEDIA&amp;fileNo=1\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=78470&amp;fileTy=MEDIA&amp;fileNo=1\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var mediaInfo = '/comm/getImage?srvcId=MEDIA&amp;parentSn=78470&amp;fileTy=MEDIA&amp;fileNo=1';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=MEDIA&amp;parentSn=78470&amp;fileTy=MEDIA&amp;fileNo=1',",
+      "'/comm/getImage?srvcId=MEDIA&amp;parentSn=78470&amp;fileTy=MEDIA&amp;fileNo=1',",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=78471&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Chamasineun Teul Chatteul_Detail_01",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=78472&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Chamasineun Teul Chatteul_Detail_02",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=78473&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Chamasineun Teul Chatteul_Detail_03",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=78474&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Chamasineun Teul Chatteul_Detail_04",
+      "markerCurrent = new L.Marker(new L.LatLng(latCurrent,lngCurrent), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat,lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat, lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "//marker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "findMarker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})});",
+      "// \t\t\tlatCurrent = position.coords.latitude;",
+      "// \t\t\tlngCurrent = position.coords.longitude;",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=13254&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=73220&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=68889&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=75035&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=73215&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=80927&fileTy=MEDIA&fileNo=1&thumbTy=M')\">"
+    ]
+  },
+  {
+    "id": "fritz",
+    "source": "https://english.visitseoul.net/hallyu/Walking-Through-Wonseo-dong-Alleyways/30586",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=POST&amp;parentSn=30586&amp;fileTy=POSTTHUMB&amp;fileNo=1\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=POST&amp;parentSn=30586&amp;fileTy=POSTTHUMB&amp;fileNo=1\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var mediaInfo = '/comm/getImage?srvcId=POST&amp;parentSn=30586&amp;fileTy=POSTTHUMB&amp;fileNo=1';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=POST&amp;parentSn=30586&amp;fileTy=POSTTHUMB&amp;fileNo=1',",
+      "'/comm/getImage?srvcId=POST&amp;parentSn=30586&amp;fileTy=POSTTHUMB&amp;fileNo=1',",
+      "<style type=\"text/css\"> p { word-break: keep-all; /* 한국어 외 언어권은 삭제하시기 바랍니다  */ } ul, li { list-style-type: none; padding: 0px; } .container h3 { color: #fff; border-radius: 0.1em; background-color: rgb(0, 0, 0, .3); font-size: 2.5em; } .container { position: relative; text-align: center; } .container .head_bg { left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%); } .wrap .author { margin-top: 10px; font-size: 0.8em; font-weight: bold; } .wrap .bg_box { width: 100px; margin-left: auto; margin-right: auto; } .wrap .bg_box02 { width: 190px; margin-left: auto; margin-right: auto; } .div_wrap .bg_box { width: 100px; margin-left: auto; margin-right: auto; } .div_wrap .bg_box02 { width: 190px; margin-left: auto; margin-right: auto; } .div_wrap .bg_box03 { width: 270px; margin-left: auto; margin-right: auto; } .wrap h6 { text-align: center; background-color: #b9ebb3; margin-top: 3.5em; margin-bottom: 1em; } .wrap h3 { text-align: center; } .spc_bar { text-align: center; margin-top: 3em; } .spc_bar02 { width: 80px; text-align: center; border-top: 2px solid #eee; margin-top: 3em; margin-left: auto; margin-right: auto; } .wrap .text_box { text-align: center; margin-top: 1.5em; font-size: 0.8em; color: #79c370; } .div_wrap .bg_box { width: 120px; margin-left: auto; margin-right: auto; } .div_wrap h6 { text-align: center; background-color: #b9ebb3; margin-top: 3.5em; margin-bottom: 1em; } .div_wrap h3 { text-align: center; } .div_wrap .text_box { margin-top: 1.5em; f"
+    ]
+  },
+  {
+    "id": "teatherapy",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188076",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/58/3512358_image2_1.jpg\" />",
+      "\"latitude\":\"37.5791621422181\",",
+      "\"longitude\":\"126.983551148135\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "park",
+    "source": "https://english.visitseoul.net/museum/ParkNoSoo-Museum/ENP042350",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=POST&amp;parentSn=42351&amp;fileTy=POSTTHUMB&amp;fileNo=1\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=POST&amp;parentSn=42351&amp;fileTy=POSTTHUMB&amp;fileNo=1\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var mediaInfo = '/comm/getImage?srvcId=POST&amp;parentSn=42351&amp;fileTy=POSTTHUMB&amp;fileNo=1';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=POST&amp;parentSn=42351&amp;fileTy=POSTTHUMB&amp;fileNo=1',",
+      "'/comm/getImage?srvcId=POST&amp;parentSn=42351&amp;fileTy=POSTTHUMB&amp;fileNo=1',",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=56153&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Front view of Park No-soo Museum\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=56154&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Front view of Park No-soo Museum\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=56155&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"A path cuts through the middle with Park No-soo Art Museum to the left and the garden, with various collected rocks and plants, to the right\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=56156&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"A bathroom renovated as a museum space with artwork displayed on a shelf next to the bathtub \">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=56157&amp;fileTy=MEDIA&amp;fileNo=1&amp;thumbTy=L\" alt=\"Books displayed on a wooden showcase placed in front of a white wall with windows\">",
+      "markerCurrent = new L.Marker(new L.LatLng(latCurrent,lngCurrent), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat,lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat, lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "//marker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "findMarker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})});",
+      "// \t\t\tlatCurrent = position.coords.latitude;",
+      "// \t\t\tlngCurrent = position.coords.longitude;",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=80223&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=60358&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=79798&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=60876&fileTy=MEDIA&fileNo=2&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=80217&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=42856&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">"
+    ]
+  },
+  {
+    "id": "daelim",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=89412",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/03/1570903_image2_1.jpg\" />",
+      "\"latitude\":\"37.5774482773549\",",
+      "\"longitude\":\"126.973321639678\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "hakgojae",
+    "source": "https://english.visitseoul.net/attractions/hakgojae-gallery/ENP001871",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=16657&amp;fileTy=MEDIA&amp;fileNo=2\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&amp;parentSn=16657&amp;fileTy=MEDIA&amp;fileNo=2\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var mediaInfo = '/comm/getImage?srvcId=MEDIA&amp;parentSn=16657&amp;fileTy=MEDIA&amp;fileNo=2';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=MEDIA&amp;parentSn=16657&amp;fileTy=MEDIA&amp;fileNo=2',",
+      "'/comm/getImage?srvcId=MEDIA&amp;parentSn=16657&amp;fileTy=MEDIA&amp;fileNo=2',",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=16657&amp;fileTy=MEDIA&amp;fileNo=2&amp;thumbTy=L\" alt=\"This is the exterior of the Hanok-style gallery Hakgojae.\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=16658&amp;fileTy=MEDIA&amp;fileNo=2&amp;thumbTy=L\" alt=\"Hakgojae Gallery_1\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=16659&amp;fileTy=MEDIA&amp;fileNo=2&amp;thumbTy=L\" alt=\"Hakgojae Gallery_2\">",
+      "<img src=\"/comm/getImage?srvcId=MEDIA&amp;parentSn=16660&amp;fileTy=MEDIA&amp;fileNo=2&amp;thumbTy=L\" alt=\"Hakgojae Gallery_3\">",
+      "markerCurrent = new L.Marker(new L.LatLng(latCurrent,lngCurrent), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat,lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "marker = new L.Marker(new L.LatLng(lat, lng), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "//marker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})}).addTo(map);",
+      "findMarker = new L.Marker(new L.LatLng(lat_,lng_), {icon:new L.Icon({iconUrl:markerIcon,iconSize:new L.Point(40,40)})});",
+      "// \t\t\tlatCurrent = position.coords.latitude;",
+      "// \t\t\tlngCurrent = position.coords.longitude;",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=23998&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=76345&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=POST&amp;parentSn=3498&amp;fileTy=POSTTHUMB&amp;fileNo=1&amp;thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=16442&fileTy=MEDIA&fileNo=2&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=67138&fileTy=MEDIA&fileNo=1&thumbTy=M')\">",
+      "<div class=\"thumb\" style=\"background-image:url('/comm/getImage?srvcId=MEDIA&parentSn=78006&fileTy=MEDIA&fileNo=1&thumbTy=M')\">"
+    ]
+  },
+  {
+    "id": "boan",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=175341",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/38/2762138_image2_1.jpg\" />",
+      "\"latitude\":\"37.5791091918353\",",
+      "\"longitude\":\"126.973649338076\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "baekinje",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=64978",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/92/3096392_image2_1.jpg\" />",
+      "\"latitude\":\"37.5803870019372\",",
+      "\"longitude\":\"126.984053841886\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "sangchon",
+    "source": "https://english.visitseoul.net/editorspicks/Sangchonjae-Cultural-Space/ENN037775",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=POST&amp;parentSn=37775&amp;fileTy=POSTTHUMB&amp;fileNo=1\">",
+      "<meta name=\"twitter:image\" content=\"https://english.visitseoul.net/comm/getImage?srvcId=POST&amp;parentSn=37775&amp;fileTy=POSTTHUMB&amp;fileNo=1\">",
+      "\"logo\": \"https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=49029&fileTy=MEDIA&fileNo=1\",",
+      "var fileList = '[FileVO [srvcId=POST, parentSn=37775, fileNo=1, flpth=/data/POST/20210601/, orginlFileNm=getImage1.jpeg, streFileNm=202106010951477111, fileExtsn=jpeg, fileSize=100142, fileDc=null, dwldCo=0, creatDt=Tue Jun 01 10:15:39 KST 2021, watermark=null]]';",
+      "var mediaInfo = '/comm/getImage?srvcId=POST&amp;parentSn=37775&amp;fileTy=POSTTHUMB&amp;fileNo=1';",
+      "thumbUrl : location.protocol + '//' + location.host + '/comm/getImage?srvcId=POST&amp;parentSn=37775&amp;fileTy=POSTTHUMB&amp;fileNo=1',",
+      "'/comm/getImage?srvcId=POST&amp;parentSn=37775&amp;fileTy=POSTTHUMB&amp;fileNo=1',",
+      "<style type=\"text/css\"> p { font-size: 16px; font-weight: 300; color: #333; width: 100%; margin: 0; text-align: center; word-break: keep-all; } .main-img { width: 100%; height: auto; } h5 { font-size: 20px; font-weight: 900; color: #000000; text-align: center; margin: 30px auto 33px; width: 100%; } h4 { font-size: 28px !important; font-weight: 900; color: #0073c9 !important; text-align: center; margin: 0; width: 100%; } h3 { font-size: 32px !important; font-weight: 900; color: #0073c9 !important; text-align: center; margin: 0; width: 100%; } h3.black { color: #333333 !important; } .cnt-blockquote { clear: both; padding: 50px 0px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; overflow: hidden; background-color: #fff; } .cnt-blockquote dl { position: relative; width: 50%; float: left; padding: 0px 0px 0px 110px; box-sizing: border-box; height: 30px; margin: 5px 0px } .cnt-blockquote dl dt { position: absolute; left: 0px; top: 0px; z-index: 1; width: 95px; height: 30px; border-radius: 15px; text-align: center; font-size: 16px; color: #fff; line-height: 29px; background-color: #333333 } .cnt-blockquote dl dd { font-size: 16px; color: #000; padding-top: 3px } .count-element { margin: 25px 0px 25px 0; text-align: center } .count-element span { display: inline-block; width: 55px; height: 55px; background-color: #0073c9; text-align: center; font-size: 22px; font-weight: bold; line-height: 55px; color: #fff; border-radius: 27px; } .cols4-element { overflow: hidden; paddin"
+    ]
+  },
+  {
+    "id": "sajik",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=86285",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/20/1568120_image2_1.jpg\" />",
+      "\"latitude\":\"37.5756539494647\",",
+      "\"longitude\":\"126.967663909629\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "donglim",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=97767",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/76/4101076_image2_1.jpg\" />",
+      "\"latitude\":\"37.5817368650513\",",
+      "\"longitude\":\"126.985586987069\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  },
+  {
+    "id": "sangchon-location",
+    "source": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=175347",
+    "metadata": [
+      "<meta property=\"og:image\" content=\"https://tong.visitkorea.or.kr/cms/resource/59/2987959_image2_1.jpg\" />",
+      "\"latitude\":\"37.5818637908297\",",
+      "\"longitude\":\"126.96962237201\"",
+      "var position = new naver.maps.LatLng(lat, lot);"
+    ]
+  }
+]

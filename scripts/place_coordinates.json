@@ -1,0 +1,54 @@
+{
+  "어니언 안국": [],
+  "정독도서관": [
+    {
+      "place_id": 223638159,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 258903074,
+      "lat": "37.5813652",
+      "lon": "126.9829851",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 0.12743869505990896,
+      "addresstype": "building",
+      "name": "정독도서관",
+      "display_name": "정독도서관, 북촌로5나길, 소격동, 삼청동, 종로구, 서울특별시, 03053, 대한민국",
+      "boundingbox": [
+        "37.5812448",
+        "37.5815211",
+        "126.9824494",
+        "126.9835159"
+      ]
+    }
+  ],
+  "스태픽스": [],
+  "수성동 계곡": [],
+  "런던베이글뮤지엄 안국": [],
+  "배렴 가옥": [],
+  "대오서점": [
+    {
+      "place_id": 223638294,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 307155801,
+      "lat": "37.5797175",
+      "lon": "126.9693226",
+      "category": "shop",
+      "type": "books",
+      "place_rank": 30,
+      "importance": 7.29800869763793e-05,
+      "addresstype": "shop",
+      "name": "대오서점",
+      "display_name": "대오서점, 55, 자하문로7길, 통인동, 청운효자동, 종로구, 서울특별시, 03036, 대한민국",
+      "boundingbox": [
+        "37.5796609",
+        "37.5797657",
+        "126.9692567",
+        "126.9693961"
+      ]
+    }
+  ],
+  "이상의 집": []
+}

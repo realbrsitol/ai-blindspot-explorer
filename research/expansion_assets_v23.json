@@ -1,0 +1,90 @@
+[
+  {
+    "id": "tongin",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/45/2595845_image2_1.jpg",
+    "coords": [
+      37.5807670044059,
+      126.969947621917
+    ]
+  },
+  {
+    "id": "tosokchon",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/41/3108741_image2_1.jpg",
+    "coords": [
+      37.5775621208271,
+      126.971577362193
+    ]
+  },
+  {
+    "id": "hwangsaengga",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/15/3109915_image2_1.jpg",
+    "coords": [
+      37.5800369825294,
+      126.98062085353
+    ]
+  },
+  {
+    "id": "changdeok",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/03/3092503_image2_1.jpg",
+    "coords": [
+      37.57765074254216,
+      126.99023063100555
+    ]
+  },
+  {
+    "id": "unhyeon",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/06/3577706_image2_1.jpg",
+    "coords": [
+      37.5764042098735,
+      126.987125878091
+    ]
+  },
+  {
+    "id": "gogung",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/75/3350375_image2_1.jpg",
+    "coords": [
+      37.57659156422034,
+      126.97497486352258
+    ]
+  },
+  {
+    "id": "folk",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/90/1568190_image2_1.jpg",
+    "coords": [
+      37.5819228315018,
+      126.978843195373
+    ]
+  },
+  {
+    "id": "mmca",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/36/3048936_image2_1.jpg",
+    "coords": [
+      37.5785954802057,
+      126.979987623142
+    ]
+  },
+  {
+    "id": "gyeongbok",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/98/3487598_image2_1.jpg",
+    "coords": [
+      37.576030700049394,
+      126.97672186606306
+    ]
+  },
+  {
+    "id": "workshop",
+    "imageUrl": "https://yeyak.seoul.go.kr/cmsdata/web_upload/svc/20240122/1705911054743XIUWJY3OQHE5U949ITJ2VDT25.JPG",
+    "coords": [
+      37.58253,
+      126.98602
+    ]
+  },
+  {
+    "id": "bukchoncenter",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=11859&fileTy=MEDIA&fileNo=1&thumbTy=L",
+    "coords": [
+      37.57906987420643,
+      126.98642849263337
+    ]
+  }
+]

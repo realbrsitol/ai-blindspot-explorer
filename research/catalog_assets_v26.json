@@ -1,0 +1,206 @@
+[
+  {
+    "id": "chebu",
+    "source": "https://french.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=60424",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/17/2655217_image2_1.jpg",
+    "coords": [
+      37.5765455686434,
+      126.971052442422
+    ],
+    "locationSourceUrl": "https://french.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=60424",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "jalppajin",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=60129",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/32/3109932_image2_1.jpg",
+    "coords": [
+      37.5797840630322,
+      126.971077347576
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=60129",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "gippen",
+    "source": "https://english.visitseoul.net/restaurants/GIPPEN/ENPl3xyt0",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81910&fileTy=MEDIA&fileNo=1",
+    "coords": [
+      37.575017290578,
+      126.984242826008
+    ],
+    "locationSourceUrl": "https://english.visitseoul.net/restaurants/GIPPEN/ENPl3xyt0",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "sujebi",
+    "source": "https://english.visitseoul.net/area/Samcheong-dongSujebi/ENPqgbap0",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67778&fileTy=MEDIA&fileNo=1",
+    "coords": [
+      37.5846110994267,
+      126.981908523675
+    ],
+    "locationSourceUrl": "https://english.visitseoul.net/area/Samcheong-dongSujebi/ENPqgbap0",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "london",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=191147",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/04/2809104_image2_1.jpg",
+    "coords": [
+      37.5791705224607,
+      126.986200889348
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=191147",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "osulloc",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=1573739",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/65/4043065_image2_1.png",
+    "coords": [
+      37.5809985877276,
+      126.984600900483
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=1573739",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "chatteul",
+    "source": "https://english.visitseoul.net/PalaceArea/Cha-teul/ENP139gfg",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78470&fileTy=MEDIA&fileNo=1",
+    "coords": [
+      37.5822190175845,
+      126.982274443699
+    ],
+    "locationSourceUrl": "https://english.visitseoul.net/PalaceArea/Cha-teul/ENP139gfg",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "fritz",
+    "source": "https://english.visitseoul.net/hallyu/Walking-Through-Wonseo-dong-Alleyways/30586",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=23261&fileTy=MEDIA&fileNo=1",
+    "coords": [
+      37.5777021,
+      126.9885964
+    ],
+    "locationSourceUrl": "https://maps.app.goo.gl/ERXjkcyKVRqJkViFA",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "teatherapy",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188076",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/58/3512358_image2_1.jpg",
+    "coords": [
+      37.5791621422181,
+      126.983551148135
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188076",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "park",
+    "source": "https://english.visitseoul.net/museum/ParkNoSoo-Museum/ENP042350",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=56153&fileTy=MEDIA&fileNo=1",
+    "coords": [
+      37.5813191962491,
+      126.966818545949
+    ],
+    "locationSourceUrl": "https://english.visitseoul.net/museum/ParkNoSoo-Museum/ENP042350",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "daelim",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=89412",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/03/1570903_image2_1.jpg",
+    "coords": [
+      37.5774482773549,
+      126.973321639678
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=89412",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "hakgojae",
+    "source": "https://english.visitseoul.net/attractions/hakgojae-gallery/ENP001871",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=16657&fileTy=MEDIA&fileNo=2",
+    "coords": [
+      37.580321,
+      126.980294
+    ],
+    "locationSourceUrl": "https://english.visitseoul.net/attractions/hakgojae-gallery/ENP001871",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "boan",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=175341",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/38/2762138_image2_1.jpg",
+    "coords": [
+      37.5791091918353,
+      126.973649338076
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=175341",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "baekinje",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=64978",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/92/3096392_image2_1.jpg",
+    "coords": [
+      37.5803870019372,
+      126.984053841886
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=64978",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "sangchon",
+    "source": "https://english.visitseoul.net/editorspicks/Sangchonjae-Cultural-Space/ENN037775",
+    "imageUrl": "https://english.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=27460&fileTy=MEDIA&fileNo=1",
+    "coords": [
+      37.5818637908297,
+      126.96962237201
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=175347",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "sajik",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=86285",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/20/1568120_image2_1.jpg",
+    "coords": [
+      37.5756539494647,
+      126.967663909629
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=86285",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  },
+  {
+    "id": "donglim",
+    "source": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=97767",
+    "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/76/4101076_image2_1.jpg",
+    "coords": [
+      37.5817368650513,
+      126.985586987069
+    ],
+    "locationSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=97767",
+    "checkedAt": "2026-09-30",
+    "license": "Reference photo; redistribution permission not established"
+  }
+]

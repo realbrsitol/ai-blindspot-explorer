@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-29",
+  "app": "UI/map v19, data v18",
+  "real_participants": 0,
+  "case_count": 100,
+  "case_method": "existing rule-based hypotheses reconciled with shared evidence; not 100 sessions",
+  "viewports_css_px": [
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      568
+    ]
+  ],
+  "evidence_report": "SYNTHETIC_RECHECK_V19.md",
+  "source_sha256": {
+    "index.html": "475277b727d2014a62470c68e311abbee2687229f3a6abec58593de1fe71af26",
+    "js/app.js": "b176693d5c25be56e0c19b6a9f33e8e58afc93346af1f061524efbe24f11d05a",
+    "js/map.js": "f6560cd395dded361020663d122c1f2f168bf4cf03031a0cf76aef020309e568",
+    "js/data.js": "3f0fae4a29beba548077cf3b0eaf2318de4ed47b617c00db492a0705b6d1c754",
+    "css/app.css": "ad4c895128d8effcc72315928a47c698faa468fb3a686fe481f34dcfeb443dd5",
+    "css/map-view.css": "a292a433eb807fd70df0c6066c230845e7ad2a428dce4b9c63568a31590dd082",
+    "maps/alley-style.json": "abe47c01420f388088659569b84891fd2025cd802e80099ca308a19c0ab49084"
+  },
+  "asset_file_bytes_not_network_measurements": {
+    "fonts/PretendardVariable.woff2": 2057688,
+    "vendor/maplibre/maplibre-gl.js": 1056837,
+    "vendor/leaflet/leaflet.js": 147552
+  },
+  "unexecuted": [
+    "real visitors",
+    "outdoor walking",
+    "live venue verification",
+    "physical devices",
+    "screen readers",
+    "text scaling",
+    "external map app round trip",
+    "network fault injection"
+  ],
+  "product_code_changed": false
+}
