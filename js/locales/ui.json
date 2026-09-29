@@ -989,6 +989,11 @@
     "屋内鑑賞が中心。入口・棟間の移動と休館日も確認。",
     "以室内参观为主，也请确认入口、楼间路线及休馆日。"
   ],
+  "화면 선택": ["Screen navigation", "画面の切り替え", "页面导航"],
+  "비교": ["Compare", "比較", "对比"],
+  "모든 목적": ["All purposes", "すべての目的", "所有目的"],
+  "목적 선택 닫기": ["Close purpose selection", "目的の選択を閉じる", "关闭目的选择"],
+  "여행 목적: {category}. 변경하기": ["Travel purpose: {category}. Change", "旅の目的：{category}。変更", "出游目的：{category}。更改"],
   "서로 다른 카테고리에 같은 장소가 포함될 수 있어요.": [
     "A place may appear in more than one category.",
     "同じ場所が複数のカテゴリーに含まれる場合があります。",

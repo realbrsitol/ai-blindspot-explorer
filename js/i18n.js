@@ -47,7 +47,7 @@ window.AlleyI18n = (() => {
   const ready = (async () => {
     if (lang !== 'ko') {
       try {
-        const [response, uiResponse] = await Promise.all([fetch(`js/locales/${lang}.json?v=26`), fetch('js/locales/ui.json?v=26')]);
+        const [response, uiResponse] = await Promise.all([fetch(`js/locales/${lang}.json?v=26`), fetch('js/locales/ui.json?v=27')]);
         if (!response.ok || !uiResponse.ok) throw new Error('Translation unavailable');
         catalog = await response.json();
         const ui = await uiResponse.json();

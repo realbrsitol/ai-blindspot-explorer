@@ -8,7 +8,10 @@ const grid = document.getElementById('place-grid');
 const resultCount = document.getElementById('result-count');
 const regionButtons = [...document.querySelectorAll('.region-button')];
 const detail = document.getElementById('place-detail');
-const viewToggle = document.getElementById('view-toggle');
+const compareTab = document.getElementById('compare-tab');
+const mapTab = document.getElementById('map-tab');
+const categorySheet = document.getElementById('category-sheet');
+const categoryOptions = document.getElementById('category-options');
 let currentRegion = '';
 let currentCategory = '';
 let currentContext = '';
@@ -24,13 +27,6 @@ let mapReturnFocus = null;
 let locationReady = false;
 const categories = window.ALLEY_CATEGORIES;
 const moreComparisons = document.getElementById('more-comparisons');
-const mapCategory = document.getElementById('map-category');
-categories.forEach(category => {
-  const option = document.createElement('option');
-  option.value = category.id;
-  option.textContent = category.label;
-  mapCategory.append(option);
-});
 
 // Remove only the legacy app's worker and caches.
 if ('serviceWorker' in navigator) {
@@ -298,6 +294,7 @@ function closePlace() {
   }
 }
 function navigateView(show, pairId = '') {
+  if (show === mapView && !pairId) return;
   const url = new URL(location.href);
   if (show) {
     if (!mapView) listScroll = window.scrollY;
@@ -311,6 +308,7 @@ function navigateView(show, pairId = '') {
   } else {
     url.searchParams.delete('view');
     url.searchParams.delete('pair');
+    if (document.activeElement === compareTab) mapReturnFocus = compareTab;
   }
   history.pushState(null, '', url);
   syncLocation();
@@ -334,8 +332,8 @@ function jumpToPair(id) {
     card?.focus({ preventScroll: true });
   });
 }
-let categoriesExpanded = false;
 function chooseCategory(id) {
+  if (id === currentCategory) return;
   const url = new URL(location.href);
   url.searchParams.set('category', id);
   url.searchParams.delete('pair');
@@ -344,32 +342,36 @@ function chooseCategory(id) {
   syncLocation();
 }
 function renderSituationNav() {
-  const primary = ['all', 'food', 'cafe', 'rest'];
-  const visibleCategories = categories.filter(category => categoriesExpanded || primary.includes(category.id) || category.id === currentCategory);
   const nav = document.getElementById('situation-nav');
-  const buttons = visibleCategories.map(category => {
-    const button = element('button', 'situation-link', category.label);
+  const selected = categories.find(category => category.id === currentCategory);
+  const trigger = element('button', 'purpose-button');
+  trigger.id = 'purpose-button';
+  trigger.type = 'button';
+  trigger.setAttribute('aria-haspopup', 'dialog');
+  trigger.setAttribute('aria-expanded', String(categorySheet.open));
+  trigger.setAttribute('aria-controls', 'category-sheet');
+  trigger.setAttribute('aria-label', t('여행 목적: {category}. 변경하기', { category: selected.label }));
+  trigger.append(element('span', 'purpose-label', currentCategory === 'all' ? '모든 목적' : selected.label));
+  trigger.addEventListener('click', () => {
+    categorySheet.showModal();
+    document.body.classList.add('category-open');
+    trigger.setAttribute('aria-expanded', 'true');
+    categoryOptions.querySelector('[aria-pressed="true"]')?.focus({ preventScroll: true });
+  });
+  nav.replaceChildren(trigger);
+  const buttons = categories.map(category => {
+    const button = element('button', 'category-option', category.label);
     button.type = 'button';
     button.dataset.category = category.id;
-    button.setAttribute('aria-controls', 'place-grid');
     button.setAttribute('aria-pressed', String(category.id === currentCategory));
     button.addEventListener('click', () => {
+      categorySheet.close();
       chooseCategory(category.id);
-      document.querySelector(`[data-category="${category.id}"]`)?.focus({ preventScroll: true });
+      document.getElementById('purpose-button')?.focus({ preventScroll: true });
     });
     return button;
   });
-  const expand = element('button', 'situation-link category-expand', categoriesExpanded ? '카테고리 접기' : '모든 카테고리');
-  expand.type = 'button';
-  expand.dataset.expandCategories = '';
-  expand.setAttribute('aria-expanded', String(categoriesExpanded));
-  expand.setAttribute('aria-controls', 'situation-nav');
-  expand.addEventListener('click', () => {
-    categoriesExpanded = !categoriesExpanded;
-    renderSituationNav();
-    nav.querySelector('[data-expand-categories]')?.focus({ preventScroll: true });
-  });
-  nav.replaceChildren(...buttons, expand);
+  categoryOptions.replaceChildren(...buttons);
   const notes = {
     all: '관심 있는 목적을 골라보세요. 각 목적마다 4가지 비교·8곳을 담았어요.',
     free: '일반 관람 기준이에요. 유료 체험·상품과 예약 조건은 별도로 확인하세요.',
@@ -380,8 +382,17 @@ function renderSituationNav() {
   const noteText = notes[currentCategory] || '';
   note.textContent = t(noteText);
   note.hidden = !noteText || (currentCategory === 'all' && currentRegion !== 'all');
-  mapCategory.value = currentCategory;
 }
+document.getElementById('close-categories').addEventListener('click', () => categorySheet.close());
+categorySheet.addEventListener('close', () => {
+  document.body.classList.remove('category-open');
+  document.getElementById('purpose-button')?.setAttribute('aria-expanded', 'false');
+});
+categorySheet.addEventListener('click', event => {
+  if (event.target !== categorySheet) return;
+  const rect = categorySheet.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) categorySheet.close();
+});
 function renderList() {
   grid.replaceChildren(...filteredPairs.slice(0, listLimit).map(renderCard));
   const remaining = filteredPairs.length - listLimit;
@@ -410,7 +421,6 @@ moreComparisons.addEventListener('click', () => {
   renderList();
   if (next) document.getElementById(`comparison-${next.id}`)?.focus({ preventScroll: true });
 });
-mapCategory.addEventListener('change', () => chooseCategory(mapCategory.value));
 function syncLocation() {
   const initialLocation = !locationReady;
   locationReady = true;
@@ -454,11 +464,11 @@ function syncLocation() {
   const wasMap = mapView;
   if (!wasMap && showMap) {
     listScroll = window.scrollY;
-    mapReturnFocus = document.activeElement === document.body ? viewToggle : document.activeElement;
+    mapReturnFocus = document.activeElement === document.body ? mapTab : document.activeElement;
   }
   document.body.classList.toggle('is-map-view', showMap);
-  viewToggle.textContent = t(showMap ? '비교 보기' : '지도 보기');
-  viewToggle.setAttribute('aria-pressed', String(showMap));
+  (showMap ? mapTab : compareTab).setAttribute('aria-current', 'page');
+  (showMap ? compareTab : mapTab).removeAttribute('aria-current');
   if (showMap && (!wasMap || pairId !== mapPair)) {
     if (requestedPair && !requestedPair.placeIds.includes(selectedPlace)) selectPlace('');
     window.AlleyMap?.show(pairId);
@@ -475,7 +485,7 @@ function syncLocation() {
     if (showMap) document.getElementById('map-title').focus({ preventScroll: true });
     else {
       window.scrollTo({ top: listScroll, behavior: 'instant' });
-      const target = mapReturnFocus?.isConnected && mapReturnFocus.getClientRects().length ? mapReturnFocus : viewToggle;
+      const target = mapReturnFocus?.isConnected && mapReturnFocus.getClientRects().length ? mapReturnFocus : compareTab;
       target.focus({ preventScroll: true });
     }
   });
@@ -505,9 +515,13 @@ regionButtons.forEach(button => button.addEventListener('click', () => {
 }));
 document.getElementById('close-detail').addEventListener('click', closePlace);
 detail.addEventListener('cancel', event => { event.preventDefault(); closePlace(); });
-window.addEventListener('popstate', syncLocation);
+window.addEventListener('popstate', () => {
+  if (categorySheet.open) categorySheet.close();
+  syncLocation();
+});
 window.addEventListener('hashchange', syncLocation);
-viewToggle.addEventListener('click', () => navigateView(!mapView));
+compareTab.addEventListener('click', () => navigateView(false));
+mapTab.addEventListener('click', () => navigateView(true));
 window.addEventListener('alley:select', event => selectPlace(event.detail));
 window.addEventListener('alley:detail', event => {
   const id = typeof event.detail === 'string' ? event.detail : event.detail.id;

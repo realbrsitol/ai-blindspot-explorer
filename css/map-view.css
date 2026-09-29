@@ -1,8 +1,5 @@
 /* A dedicated map viewport. The place card occupies space, never covers pins. */
 .map-panel { display: none; min-width: 0; background: var(--paper); }
-.map-topic { display: flex; flex: 0 0 48px; align-items: center; gap: 12px; border-bottom: 1px solid var(--line); }
-.map-topic label { color: var(--muted); font-size: 13px; }
-.map-topic select { flex: 1; min-width: 0; min-height: 44px; border: 0; background: var(--paper); color: var(--ink); font: inherit; font-size: 14px; }
 .map-comparison-options { display: grid; gap: 8px; }
 .map-pin-label.is-colliding { opacity: 0; pointer-events: none; }
 .map-pin:focus-visible .map-pin-label, .map-pin:hover .map-pin-label { opacity: 1; }
@@ -19,7 +16,7 @@
 .map-status { margin: 0; padding: 10px 12px; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .map-status:empty { display: none; }
 .map-retry { margin: 0 12px 8px; min-height: 44px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); background: var(--paper); font-size: 13px; }
-.map-selection { flex: 0 0 auto; height: auto; max-height: 44dvh; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 12px 2px max(12px, env(safe-area-inset-bottom)); border: 0; background: var(--paper); scrollbar-width: thin; scroll-padding-block: 8px; }
+.map-selection { flex: 0 0 auto; height: auto; max-height: min(35dvh, 260px); min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 12px 2px; border: 0; background: var(--paper); scrollbar-width: thin; scroll-padding-block: 8px; }
 .map-scroll-hint { position: sticky; bottom: -12px; margin: 8px 0 0; padding-block: 4px; background: var(--paper); color: var(--muted); font-size: 12px; }
 .map-selection h3 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.4; letter-spacing: -.025em; }
 .map-card-summary { display: flex; align-items: center; gap: 12px; min-height: 58px; }
@@ -68,29 +65,16 @@
 #map .maplibregl-ctrl-attrib-inner { max-width: 210px; white-space: normal; }
 #map .maplibregl-ctrl-attrib.maplibregl-compact { min-height: 32px; padding: 6px 30px 6px 8px; }
 #map .maplibregl-ctrl-attrib-button:focus-visible { box-shadow: 0 0 0 2px var(--ink); }
-.is-map-view { overflow: hidden; }
-.is-map-view main.shell { width: min(calc(100% - 36px), 1080px); }
-.is-map-view .intro, .is-map-view .results-toolbar, .is-map-view .situation-nav, .is-map-view .visit-note, .is-map-view .comparison-results { display: none; }
+.is-map-view { overflow: hidden; padding-bottom: 0; }
+.is-map-view .intro, .is-map-view .results-toolbar, .is-map-view .visit-note, .is-map-view .comparison-results { display: none; }
 .is-map-view .explorer-layout { display: block; }
-.is-map-view .view-toggle { display: block; background: var(--subtle); }
-.is-map-view .map-panel { display: flex; flex-direction: column; position: static; height: calc(100dvh - 117px); max-height: none; overflow: visible; padding: 0; }
-.is-map-view .map-heading { flex-basis: 42px; }
-@media (min-width: 900px) {
-  .map-panel { display: flex; flex-direction: column; position: sticky; top: 120px; height: calc(100dvh - 140px); min-height: 490px; max-height: none; overflow: visible; padding: 0; }
-  .view-toggle { display: block; }
-  .is-map-view .map-panel { display: grid; grid-template-columns: minmax(0, 1fr) 320px; grid-template-rows: 48px 44px minmax(0, 1fr); column-gap: 24px; min-height: 0; }
-  .is-map-view .map-topic { grid-column: 1 / -1; }
-  .is-map-view .map-heading { grid-column: 1 / -1; }
-  .is-map-view .map-selection { height: auto; max-height: 100%; align-self: start; padding-top: 12px; border-top: 1px solid var(--line); }
-}
+.is-map-view .map-panel { display: flex; flex-direction: column; position: static; height: calc(100dvh - var(--header-height) - var(--toolbar-height) - var(--navigation-height)); max-height: none; overflow: visible; padding: 0; }
+.is-map-view .map-heading { flex-basis: 44px; }
 @media (max-height: 620px) {
   .is-map-view { overflow-y: auto; }
-  .is-map-view .map-stage { min-height: 160px; }
-  .is-map-view .map-selection { max-height: min(50dvh, calc(100dvh - 321px)); }
-}
-@media (max-height: 460px) {
+  .is-map-view main { padding-bottom: var(--navigation-height); }
   .is-map-view .map-panel { height: auto; min-height: 0; }
-  .is-map-view .map-stage { flex: 0 0 180px; min-height: 180px; }
+  .is-map-view .map-stage { flex: 0 0 220px; min-height: 220px; }
   .is-map-view .map-selection { max-height: 240px; min-height: 144px; }
 }
 @media (hover: hover) {
